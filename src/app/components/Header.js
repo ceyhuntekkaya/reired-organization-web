@@ -1,9 +1,8 @@
 import {Link} from "react-router-dom";
-import {useState} from "react";
 
 export default function Header (){
 
-    const[backgroundImage, setBackgroundImage] = useState("../img/bg/banner-1.jpg")
+
 
 
     return (

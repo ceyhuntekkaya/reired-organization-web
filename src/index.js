@@ -8,18 +8,34 @@ import Error from "./app/Error";
 import routes from "./configs/route";
 import Header from "./app/components/Header";
 import BreadcrumbArea from "./app/components/BreadcrumbArea";
-import TravelListOne from "./app/TravelListOne";
-import TravelListTwo from "./app/TravelListTwo";
-import TravelListGrid from "./app/TravelListGrid";
-import SignUp from "./app/SignUp";
-import Checkout from "./app/Checkout";
-import CartList from "./app/CartList";
-import Contact from "./app/Contact";
-import Login from "./app/Login";
-import AboutUs from "./app/AboutUs";
-import AdventureDetailPart from "./app/adventure-detail/AdventureDetailPart";
-import AdventureGridArea from "./app/adventure/AdventureGridArea";
-import SubscribeArea from "./app/adventure/SubscribeArea";
+/*
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/animate.min.css";
+import "./assets/css/fontawesome.all.min.css";
+import "./assets/css/owl-carousel.min.css";
+import "./assets/css/meanmenu.min.css";
+import "./assets/css/cssanimation.min.css";
+import "./assets/css/default.css";
+import "./assets/css/style.css";
+import "./assets/css/responsive.css";
+
+
+
+import "./assets/js/vendor/jquery-3.3.1.min.js";
+import "./assets/js/bootstrap.min.js";
+import "./assets/js/popper.min.js";
+import "./assets/js/owlcarousel.min.js";
+import "./assets/js/meanmenu.min.js";
+import "./assets/js/counterup.min.js";
+import "./assets/js/scrollup.min.js";
+import "./assets/js/waypoints.min.js";
+import "./assets/js/imagesloaded.pkgd.min.js";
+import "./assets/js/isotope.min.js";
+import "./assets/js/main.js";
+*/
+
+
+
 import PartnerArea from "./app/components/PartnerArea";
 import Footer from "./app/components/Footer";
 
