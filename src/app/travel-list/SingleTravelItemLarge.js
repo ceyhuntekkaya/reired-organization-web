@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SingleTravelItemLarge (){
     return (
 
@@ -13,8 +15,8 @@ export default function SingleTravelItemLarge (){
                     <span><i className="fal fa-comments"></i>12 Comments</span>
                 </div>
                 <div className="entry-header">
-                    <a href="blog-1.html#"><h2 className="entry-title">The Only Beach Packing List
-                        You’ll Ever Need</h2></a>
+                    <Link to="/detail"><h2 className="entry-title">The Only Beach Packing List
+                        You’ll Ever Need</h2></Link>
                 </div>
                 <div className="entry-content">
                     <p>It doesn’t matter if it’s just for a day or for an entire week… check out
@@ -25,7 +27,7 @@ export default function SingleTravelItemLarge (){
                         your car and go! But it’s still important to make sure you have everything
                         you need for the day so that you don’t have to turn around if you’ve
                         forgotten something.</p>
-                    <a href="blog-1.html#" className="btn border-theme">View In Detail</a>
+                    <Link to="blog-1.html#" className="btn border-theme">View In Detail</Link>
                 </div>
             </div>
         </div>

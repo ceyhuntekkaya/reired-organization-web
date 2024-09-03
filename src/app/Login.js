@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function Login (){
     return (
 
@@ -14,12 +16,12 @@ export default function Login (){
                         </div>
                         <div className="login-form">
                             <ul>
-                                <li><a className="facebook" href="login.html#"><i
-                                    className="fab fa-facebook-f"></i> Login With Facebook</a></li>
-                                <li><a className="twiter" href="login.html#"><i className="fab fa-twitter"></i> Login
-                                    With Twitter</a></li>
-                                <li><a className="google" href="login.html#"><i
-                                    className="fab fa-linkedin-in"></i> Login With Google</a></li>
+                                <li><Link className="facebook" to="login.html#"><i
+                                    className="fab fa-facebook-f"></i> Login With Facebook</Link></li>
+                                <li><Link className="twiter" to="/login"><i className="fab fa-twitter"></i> Login
+                                    With Twitter</Link></li>
+                                <li><Link className="google" to="login.html#"><i
+                                    className="fab fa-linkedin-in"></i> Login With Google</Link></li>
                             </ul>
                             <form action="login.html#" className="gane-form">
                                 <div className="form-left">
@@ -37,7 +39,7 @@ export default function Login (){
                                     </div>
                                     <div className="password">
                                         <p><input type="checkbox"/>Remember Password</p>
-                                        <p>Forgot your <a href="login.html#">password?</a></p>
+                                        <p>Forgot your <Link to="login.html#">password?</Link></p>
                                     </div>
                                     <button className="btn btn-theme" type="submit">Ploace Order</button>
                                 </div>

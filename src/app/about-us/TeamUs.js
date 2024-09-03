@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function TeamUs (){
     return (
         <div className="guide-area pt-85 pb-80">
@@ -18,13 +20,13 @@ export default function TeamUs (){
                                 <img src="img/guide/1.jpg" alt=""/>
                                 <div className="guide-content">
                                     <p className="title">Adventure Manager</p>
-                                    <a href="about.html#"><h4>Chris Kearney</h4></a>
+                                    <Link to="about.html#"><h4>Chris Kearney</h4></Link>
                                     <ul>
-                                        <li><a href="about.html#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-youtube"></i></a></li>
+                                        <li><Link to="about.html#"><i className="fab fa-facebook-f"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-twitter"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-instagram"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-linkedin-in"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-youtube"></i></Link></li>
                                     </ul>
                                     <div className="about-guide">
                                         <p>Tasked with finding the freshest and most sustainable adventures around
@@ -41,13 +43,13 @@ export default function TeamUs (){
                                 <img src="img/guide/2.jpg" alt=""/>
                                 <div className="guide-content">
                                     <p className="title">Customer Experience Manager</p>
-                                    <a href="about.html#"><h4>Megan Devenish</h4></a>
+                                    <Link to="about.html#"><h4>Megan Devenish</h4></Link>
                                     <ul>
-                                        <li><a href="about.html#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-youtube"></i></a></li>
+                                        <li><Link to="about.html#"><i className="fab fa-facebook-f"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-twitter"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-instagram"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-linkedin-in"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-youtube"></i></Link></li>
                                     </ul>
                                     <div className="about-guide">
                                         <p>Tasked with finding the freshest and most sustainable adventures around
@@ -64,13 +66,13 @@ export default function TeamUs (){
                                 <img src="img/guide/3.jpg" alt=""/>
                                 <div className="guide-content">
                                     <p className="title">Travel Specialist</p>
-                                    <a href="about.html#"><h4>Dan Bloomfield</h4></a>
+                                    <Link to="about.html#"><h4>Dan Bloomfield</h4></Link>
                                     <ul>
-                                        <li><a href="about.html#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-instagram"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="about.html#"><i className="fab fa-youtube"></i></a></li>
+                                        <li><Link to="about.html#"><i className="fab fa-facebook-f"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-twitter"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-instagram"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-linkedin-in"></i></Link></li>
+                                        <li><Link to="about.html#"><i className="fab fa-youtube"></i></Link></li>
                                     </ul>
                                     <div className="about-guide">
                                         <p>Tasked with finding the freshest and most sustainable adventures around

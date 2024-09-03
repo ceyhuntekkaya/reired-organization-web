@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SingleTravelItemSmall (){
     return (
         <div className="col-lg-4 col-sm-6 isotope_item">
@@ -12,8 +14,8 @@ export default function SingleTravelItemSmall (){
                         <span><i className="fal fa-comments"></i>12</span>
                     </div>
                     <div className="entry-header">
-                        <a href="blog-grid.html#"><h2 className="entry-title">Surviving The
-                            World’s Most Dangerous Hike</h2></a>
+                        <Link to="blog-grid.html#"><h2 className="entry-title">Surviving The
+                            World’s Most Dangerous Hike</h2></Link>
                     </div>
                     <div className="entry-content">
                         <p>It doesn’t matter if it’s just for a day or for an entire week… check
@@ -25,8 +27,8 @@ export default function SingleTravelItemSmall (){
                             important to make sure you have everything you need for the day so
                             that you don’t have to turn around if you’ve forgotten
                             something.</p>
-                        <a href="blog-grid.html#" className="btn more">Read More <i
-                            className="fal fa-angle-right"></i></a>
+                        <Link to="blog-grid.html#" className="btn more">Read More <i
+                            className="fal fa-angle-right"></i></Link>
                     </div>
                 </div>
             </div>

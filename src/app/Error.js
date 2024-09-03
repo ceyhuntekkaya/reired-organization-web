@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function Error (){
     return (
         <div className="error-area pt-90">
@@ -15,7 +17,7 @@ export default function Error (){
                                 to see whats new at Adventuren!</p>
                             <p>If you just want to ask us a question, then visit our contact us page to send us an email
                                 or give us a call for some instant answers!</p>
-                            <a className="btn btn-theme" href="404.html#">Back To Homepage</a>
+                            <Link className="btn btn-theme" to="/error">Back To Homepage</Link>
                         </div>
                     </div>
                 </div>

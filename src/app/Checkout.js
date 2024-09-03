@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function Checkout (){
     return (
         <div className="checkout-area pt-90">
@@ -62,9 +64,9 @@ export default function Checkout (){
                                     <div className="payment-method-contnt">
                                         <p>Make your payment directly into our bank account. Your order will not be
                                             shipped until the funds have cleared in our account.</p>
-                                        <a href="check-out.html#"><img src="img/payment/p1.png" alt=""/></a>
-                                        <a href="check-out.html#"><img src="img/payment/p2.png" alt=""/></a>
-                                        <a href="check-out.html#"><img src="img/payment/p3.png" alt=""/></a>
+                                        <Link to="check-out.html#"><img src="img/payment/p1.png" alt=""/></Link>
+                                        <Link to="check-out.html#"><img src="img/payment/p2.png" alt=""/></Link>
+                                        <Link to="check-out.html#"><img src="img/payment/p3.png" alt=""/></Link>
                                     </div>
                                     <div className="single-field">
                                         <input type="text" className="form-control" id="usr"

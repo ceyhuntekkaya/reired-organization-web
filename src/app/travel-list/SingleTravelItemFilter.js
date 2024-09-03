@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SingleTravelItemFilter (){
     return (
         <div className="blog-top-bar">
@@ -15,8 +17,8 @@ export default function SingleTravelItemFilter (){
             </form>
             <div className="grid-blog">
                 <ul>
-                    <li><a href="blog-1.html#"><i className="fal fa-th"></i></a></li>
-                    <li><a href="blog-1.html#"><i className="fal fa-list-ul"></i></a></li>
+                    <li><Link to="blog-1.html#"><i className="fal fa-th"></i></Link></li>
+                    <li><Link to="blog-1.html#"><i className="fal fa-list-ul"></i></Link></li>
                 </ul>
             </div>
         </div>

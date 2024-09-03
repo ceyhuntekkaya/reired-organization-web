@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SimilarTrips (){
     return (
         <div className="adve-detail-area pt-90">
@@ -17,7 +19,7 @@ export default function SimilarTrips (){
                                 <img src="img/adventure/g3.jpg" alt="adventure"/>
                                 <div className="adventure-content">
                                     <p className="tour">6 Days - 18 People Max - Multi-activity</p>
-                                    <a href="adventure-detail-1.html#"><h6>Croatia Dalmatian Coast Tour</h6></a>
+                                    <Link to="/detail"><h6>Croatia Dalmatian Coast Tour</h6></Link>
                                     <p>Our wonderful team of travel professionals take people for camping and give
                                         them the best trekking experience ever.</p>
                                     <h4>$3998 <small>Per Person</small></h4>
@@ -27,8 +29,8 @@ export default function SimilarTrips (){
                                 <img src="img/adventure/g4.jpg" alt="adventure"/>
                                 <div className="adventure-content">
                                     <p className="tour">9 Nights - Remote Rides - Wild Adventures</p>
-                                    <a href="adventure-detail-1.html#"><h6>Circumnavigate Kilimanjaro by Bike</h6>
-                                    </a>
+                                    <Link to="adventure-detail-1.html#"><h6>Circumnavigate Kilimanjaro by Bike</h6>
+                                    </Link>
                                     <p>Our wonderful team of travel professionals take people for camping and give
                                         them the best trekking experience ever.</p>
                                     <h4>$1931 <small>Per Person</small></h4>
@@ -38,7 +40,7 @@ export default function SimilarTrips (){
                                 <img src="img/adventure/g5.jpg" alt="adventure"/>
                                 <div className="adventure-content">
                                     <p className="tour">4 Nights - 14 People Max - Wild Hikes</p>
-                                    <a href="adventure-detail-1.html#"><h6>The 3 Peaks Challenge in Morocco</h6></a>
+                                    <Link to="adventure-detail-1.html#"><h6>The 3 Peaks Challenge in Morocco</h6></Link>
                                     <p>Our wonderful team of travel professionals take people for camping and give
                                         them the best trekking experience ever.</p>
                                     <h4>$390 <small>Per Person</small></h4>
@@ -48,7 +50,7 @@ export default function SimilarTrips (){
                                 <img src="img/adventure/g6.jpg" alt="adventure"/>
                                 <div className="adventure-content">
                                     <p className="tour">6 Days - 12 People Max - Multi-activity</p>
-                                    <a href="adventure-detail-1.html#"><h6>Adventure Hiking in Namibia</h6></a>
+                                    <Link to="adventure-detail-1.html#"><h6>Adventure Hiking in Namibia</h6></Link>
                                     <p>Our wonderful team of travel professionals take people for camping and give
                                         them the best trekking experience ever.</p>
                                     <h4>$1188 <small>Per Person</small></h4>

@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function Contact (){
     return(
         <>
@@ -35,8 +37,8 @@ export default function Contact (){
                                 <div className="contact-content">
                                     <h4>Let’s Chat!</h4>
                                     <p>Mon - Sat: 9am to 8pm EST Sun: Closed</p>
-                                    <a href="contact.html#" className="chat">Chat with us <i
-                                        className="fal fa-angle-right"></i></a>
+                                    <Link to="/contact" className="chat">Chat with us <i
+                                        className="fal fa-angle-right"></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -47,9 +49,9 @@ export default function Contact (){
                                 </div>
                                 <div className="contact-content">
                                     <h4>Phone And Fax</h4>
-                                    <p>Mobile: <a href="tel:+008012345678">+123-456-7890</a></p>
-                                    <p>Phone: <a href="tel:+008012345678">+12-3456-6789</a></p>
-                                    <p>Fax: <a href="tel:+008012345678">+2-3456-6789</a></p>
+                                    <p>Mobile: <Link to="tel:+008012345678">+123-456-7890</Link></p>
+                                    <p>Phone: <Link to="tel:+008012345678">+12-3456-6789</Link></p>
+                                    <p>Fax: <Link to="tel:+008012345678">+2-3456-6789</Link></p>
                                 </div>
                             </div>
                         </div>
@@ -60,9 +62,9 @@ export default function Contact (){
                                 </div>
                                 <div className="contact-content">
                                     <h4>Email Address</h4>
-                                    <a href="mailto:yourname@email.com">admin@adventuren.com</a>
-                                    <a href="mailto:yourname@email.com">info@adventuren.com</a>
-                                    <a href="contact.html#">www.adventuren.com</a>
+                                    <Link to="mailto:yourname@email.com">admin@adventuren.com</Link>
+                                    <Link to="mailto:yourname@email.com">info@adventuren.com</Link>
+                                    <Link to="contact.html#">www.adventuren.com</Link>
                                 </div>
                             </div>
                         </div>

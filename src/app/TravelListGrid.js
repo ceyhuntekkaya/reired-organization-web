@@ -1,5 +1,6 @@
 import SingleTravelItemSmall from "./travel-list/SingleTravelItemSmall";
 import SingleTravelItemFilter from "./travel-list/SingleTravelItemFilter";
+import {Link} from "react-router-dom";
 
 export default function TravelListGrid (){
     return (
@@ -23,13 +24,13 @@ export default function TravelListGrid (){
                         </div>
                         <div className="gane-pagination mt-30 text-center">
                             <ul>
-                                <li className="active"><a href="blog-grid.html#">1</a></li>
-                                <li><a href="blog-grid.html#">2</a></li>
-                                <li><a href="blog-grid.html#">3</a></li>
-                                <li><a href="blog-grid.html#">4</a></li>
-                                <li><a href="blog-grid.html#">5</a></li>
-                                <li><a href="blog-grid.html#">6</a></li>
-                                <li><a href="blog-grid.html#">7</a></li>
+                                <li className="active"><Link to="/detail">1</Link></li>
+                                <li><Link to="blog-grid.html#">2</Link></li>
+                                <li><Link to="blog-grid.html#">3</Link></li>
+                                <li><Link to="blog-grid.html#">4</Link></li>
+                                <li><Link to="blog-grid.html#">5</Link></li>
+                                <li><Link to="blog-grid.html#">6</Link></li>
+                                <li><Link to="blog-grid.html#">7</Link></li>
                             </ul>
                         </div>
                     </div>

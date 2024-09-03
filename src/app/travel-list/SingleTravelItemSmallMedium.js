@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SingleTravelItemSmallMedium (){
     return (
 
@@ -13,8 +15,8 @@ export default function SingleTravelItemSmallMedium (){
                     <span><i className="fal fa-comments"></i>12 Comments</span>
                 </div>
                 <div className="entry-header">
-                    <a href="blog-2.html#"><h2 className="entry-title">The Only Beach Packing List
-                        You’ll Ever Need</h2></a>
+                    <Link to="blog-2.html#"><h2 className="entry-title">The Only Beach Packing List
+                        You’ll Ever Need</h2></Link>
                 </div>
                 <div className="entry-content">
                     <p>It doesn’t matter if it’s just for a day or for an entire week… check out
@@ -22,7 +24,7 @@ export default function SingleTravelItemSmallMedium (){
                         something rejuvenating about soaking up the sun, swimming in the ocean, and
                         basking in the sea breeze. If you live close enough to a beach that you can
                         take a day trip.</p>
-                    <a href="blog-2.html#" className="btn border-theme">View In Detail</a>
+                    <Link to="blog-2.html#" className="btn border-theme">View In Detail</Link>
                 </div>
             </div>
         </div>

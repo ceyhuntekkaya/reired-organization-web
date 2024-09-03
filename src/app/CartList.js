@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function CartList (){
 
     return (
@@ -20,15 +22,15 @@ export default function CartList (){
                                     <th scope="row">
                                         <div className="product-cart-wrap">
                                             <div className="product-cart-close">
-                                                <a href="cart.html#">X</a>
+                                                <Link to="cart.html#">X</Link>
                                             </div>
                                             <div className="product-cart-tbl-thumb">
                                                 <img src="img/product/ct1.jpg" alt="img"/>
                                             </div>
                                             <div className="product-cart-tbl-content">
-                                                <a href="cart.html#"><h6>Swiss Mountain Adventure</h6></a>
+                                                <Link to="cart.html#"><h6>Swiss Mountain Adventure</h6></Link>
                                                 <p>Mon 25 Apr 2022</p>
-                                                <a href="cart.html#">Edit</a>
+                                                <Link to="cart.html#">Edit</Link>
                                             </div>
                                         </div>
                                     </th>
@@ -47,15 +49,15 @@ export default function CartList (){
                                     <th scope="row">
                                         <div className="product-cart-wrap">
                                             <div className="product-cart-close">
-                                                <a href="cart.html#">X</a>
+                                                <Link to="cart.html#">X</Link>
                                             </div>
                                             <div className="product-cart-tbl-thumb">
                                                 <img src="img/product/ct2.jpg" alt="img"/>
                                             </div>
                                             <div className="product-cart-tbl-content">
-                                                <a href="cart.html#"><h6>Swiss Mountain Adventure</h6></a>
+                                                <Link to="cart.html#"><h6>Swiss Mountain Adventure</h6></Link>
                                                 <p>Mon 25 Apr 2022</p>
-                                                <a href="cart.html#">Edit</a>
+                                                <Link to="cart.html#">Edit</Link>
                                             </div>
                                         </div>
                                     </th>
@@ -74,15 +76,15 @@ export default function CartList (){
                                     <th scope="row">
                                         <div className="product-cart-wrap">
                                             <div className="product-cart-close">
-                                                <a href="cart.html#">X</a>
+                                                <Link to="cart.html#">X</Link>
                                             </div>
                                             <div className="product-cart-tbl-thumb">
                                                 <img src="img/product/ct3.jpg" alt="img"/>
                                             </div>
                                             <div className="product-cart-tbl-content">
-                                                <a href="cart.html#"><h6>Swiss Mountain Adventure</h6></a>
+                                                <Link to="cart.html#"><h6>Swiss Mountain Adventure</h6></Link>
                                                 <p>Mon 25 Apr 2022</p>
-                                                <a href="cart.html#">Edit</a>
+                                                <Link to="cart.html#">Edit</Link>
                                             </div>
                                         </div>
                                     </th>
@@ -103,10 +105,10 @@ export default function CartList (){
                         <div className="table-btn mb-30">
                             <input className="code-input single-input text-center mb-5" placeholder="Coupon Code"
                                    type="password"/>
-                            <a className="btn border-theme" href="cart.html#">Apply Coupon</a>
+                            <Link className="btn border-theme" to="cart.html#">Apply Coupon</Link>
                             <div className="right-cart-btn">
-                                <a className="btn btn-theme-dark" href="cart.html#">Update Cart</a>
-                                <a className="btn btn-theme" href="cart.html#">Checkout</a>
+                                <Link className="btn btn-theme-dark" to="cart.html#">Update Cart</Link>
+                                <Link className="btn btn-theme" to="cart.html#">Checkout</Link>
                             </div>
                         </div>
                         <div className="cart-total">
@@ -119,7 +121,7 @@ export default function CartList (){
                                 <p>Subtotal of products</p>
                                 <p> $5,665</p>
                             </div>
-                            <a className="btn btn-theme float-right" href="cart.html#">Proceed To Checkout</a>
+                            <Link className="btn btn-theme float-right" to="cart.html#">Proceed To Checkout</Link>
                         </div>
                     </div>
                 </div>

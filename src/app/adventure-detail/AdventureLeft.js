@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function AdventureLeft (){
     return (
         <div className="alpine-left-content mb-40">
@@ -14,7 +16,7 @@ export default function AdventureLeft (){
             <p>With the impacts of climate change evident in its receding glaciers, Switzerland is
                 at
                 the forefront of protecting its wild places and promoting sustainability. </p>
-            <a href="adventure-detail-1.html#" className="btn btn-theme">Book This Trip</a>
+            <Link to="/detail" className="btn btn-theme">Book This Trip</Link>
         </div>
     )
 }

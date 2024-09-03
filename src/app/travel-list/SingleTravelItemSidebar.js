@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SingleTravelItemSidebar (){
     return (
         <div className="advanture-sidebar">
@@ -26,8 +28,8 @@ export default function SingleTravelItemSidebar (){
                     </div>
                     <div className="popular-post-content">
                         <p>May 11, 2024</p>
-                        <a href="blog-1.html#"><h6>Kayaking In The Norwegian Fjords: A Love Story</h6>
-                        </a>
+                        <Link to="/detail"><h6>Kayaking In The Norwegian Fjords: A Love Story</h6>
+                        </Link>
                     </div>
                 </div>
                 <div className="single-popular-post-wrap">
@@ -36,7 +38,7 @@ export default function SingleTravelItemSidebar (){
                     </div>
                     <div className="popular-post-content">
                         <p>May 11, 2024</p>
-                        <a href="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></a>
+                        <Link to="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></Link>
                     </div>
                 </div>
                 <div className="single-popular-post-wrap">
@@ -45,7 +47,7 @@ export default function SingleTravelItemSidebar (){
                     </div>
                     <div className="popular-post-content">
                         <p>May 11, 2024</p>
-                        <a href="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></a>
+                        <Link to="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></Link>
                     </div>
                 </div>
                 <div className="single-popular-post-wrap">
@@ -54,7 +56,7 @@ export default function SingleTravelItemSidebar (){
                     </div>
                     <div className="popular-post-content">
                         <p>May 11, 2024</p>
-                        <a href="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></a>
+                        <Link to="blog-1.html#"><h6>Trek The Tour Du Mont Blanc In A Weekend</h6></Link>
                     </div>
                 </div>
             </div>
@@ -71,12 +73,12 @@ export default function SingleTravelItemSidebar (){
             <div className="sigle-adv-sidebar">
                 <h4>Select <span>Activities</span></h4>
                 <ul className="widget-activities">
-                    <li><a href="blog-1.html#"><img src="img/icon/a1.png" alt=""/></a></li>
-                    <li><a href="blog-1.html#"><img src="img/icon/a2.png" alt=""/></a></li>
-                    <li><a href="blog-1.html#"><img src="img/icon/a3.png" alt=""/></a></li>
-                    <li><a href="blog-1.html#"><img src="img/icon/a4.png" alt=""/></a></li>
-                    <li><a href="blog-1.html#"><img src="img/icon/a5.png" alt=""/></a></li>
-                    <li><a href="blog-1.html#"><img src="img/icon/a6.png" alt=""/></a></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a1.png" alt=""/></Link></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a2.png" alt=""/></Link></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a3.png" alt=""/></Link></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a4.png" alt=""/></Link></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a5.png" alt=""/></Link></li>
+                    <li><Link to="blog-1.html#"><img src="img/icon/a6.png" alt=""/></Link></li>
                 </ul>
             </div>
         </div>

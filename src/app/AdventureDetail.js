@@ -9,12 +9,11 @@ export default function AdventureDetail (){
 
     return (
         <div className="wrapper">
-            <Header/>
-            <BreadcrumbArea/>
+
             <AdventureGridArea/>
             <SubscribeArea/>
             <PartnerArea/>
-            <Footer/>
+
         </div>
     )
 }

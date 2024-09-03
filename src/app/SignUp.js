@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function SignUp (){
     return (
         <div className="login-area pt-90">
@@ -13,12 +15,12 @@ export default function SignUp (){
                         </div>
                         <div className="login-form">
                             <ul>
-                                <li><a className="facebook" href="signup.html#"><i
-                                    className="fab fa-facebook-f"></i> Login With Facebook</a></li>
-                                <li><a className="twiter" href="signup.html#"><i className="fab fa-twitter"></i> Login
-                                    With Twitter</a></li>
-                                <li><a className="google" href="signup.html#"><i
-                                    className="fab fa-linkedin-in"></i> Login With Google</a></li>
+                                <li><Link className="facebook" to="signup.html#"><i
+                                    className="fab fa-facebook-f"></i> Login With Facebook</Link></li>
+                                <li><Link className="twiter" to="/sign-up"><i className="fab fa-twitter"></i> Login
+                                    With Twitter</Link></li>
+                                <li><Link className="google" to="signup.html#"><i
+                                    className="fab fa-linkedin-in"></i> Login With Google</Link></li>
                             </ul>
                             <form action="signup.html#" className="gane-form">
                                 <div className="form-left">

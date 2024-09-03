@@ -1,3 +1,5 @@
+import {Link} from "react-router-dom";
+
 export default function TripDateArea (){
     return (
         <div className="trip-date-area pt-100 pb-150">
@@ -28,48 +30,48 @@ export default function TripDateArea (){
                                 <td>Tue 3 May 2022</td>
                                 <td>Available</td>
                                 <td>$1,205 - $2,205</td>
-                                <td className="button"><a className="btn-bor" href="adventure-detail-1.html#">Book
-                                    Now</a></td>
+                                <td className="button"><Link className="btn-bor" to="adventure-detail-1.html#">Book
+                                    Now</Link></td>
                             </tr>
                             <tr>
                                 <th scope="row"><span className="pl-15">Mon 9 May 2022</span></th>
                                 <td>Tue 17 May 2022</td>
                                 <td>Available</td>
                                 <td>$2,205 - $3,350</td>
-                                <td className="button"><a className="btn-theme" href="adventure-detail-1.html#">Place
-                                    On Hold</a></td>
+                                <td className="button"><Link className="btn-theme" to="adventure-detail-1.html#">Place
+                                    On Hold</Link></td>
                             </tr>
                             <tr>
                                 <th scope="row"><span className="pl-15">Mon 9 May 2022</span></th>
                                 <td>Tue 17 May 2022</td>
                                 <td>Available</td>
                                 <td>$2,205 - $3,350</td>
-                                <td className="button"><a className="btn-bor" href="adventure-detail-1.html#">Book
-                                    Now</a></td>
+                                <td className="button"><Link className="btn-bor" to="adventure-detail-1.html#">Book
+                                    Now</Link></td>
                             </tr>
                             <tr>
                                 <th scope="row"><span className="pl-15">Mon 9 May 2022</span></th>
                                 <td>Tue 17 May 2022</td>
                                 <td>Available</td>
                                 <td>$2,205 - $3,350</td>
-                                <td className="button"><a className="btn-theme" href="adventure-detail-1.html#">Place
-                                    On Hold</a></td>
+                                <td className="button"><Link className="btn-theme" to="adventure-detail-1.html#">Place
+                                    On Hold</Link></td>
                             </tr>
                             <tr>
                                 <th scope="row"><span className="pl-15">Mon 9 May 2022</span></th>
                                 <td>Tue 17 May 2022</td>
                                 <td>Available</td>
                                 <td>$2,205 - $3,350</td>
-                                <td className="button"><a className="btn-bor" href="adventure-detail-1.html#">Book
-                                    Now</a></td>
+                                <td className="button"><Link className="btn-bor" to="adventure-detail-1.html#">Book
+                                    Now</Link></td>
                             </tr>
                             <tr>
                                 <th scope="row"><span className="pl-15">Mon 9 May 2022</span></th>
                                 <td>Tue 17 May 2022</td>
                                 <td>Available</td>
                                 <td>$2,205 - $3,350</td>
-                                <td className="button"><a className="btn-bor" href="adventure-detail-1.html#">Book
-                                    Now</a></td>
+                                <td className="button"><Link className="btn-bor" to="adventure-detail-1.html#">Book
+                                    Now</Link></td>
                             </tr>
 
                             </tbody>
