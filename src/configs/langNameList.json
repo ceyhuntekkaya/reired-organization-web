@@ -1,0 +1,821 @@
+{
+    "laguages": [{
+            "isoCode": "ab",
+            "Name": "Abkhazian"
+        },
+        {
+            "isoCode": "aa",
+            "Name": "Afar"
+        },
+        {
+            "isoCode": "af",
+            "Name": "Afrikaans"
+        },
+        {
+            "isoCode": "ak",
+            "Name": "Akan"
+        },
+        {
+            "isoCode": "sq",
+            "Name": "Albanian"
+        },
+        {
+            "isoCode": "sq",
+            "Name": "Albanian"
+        },
+        {
+            "isoCode": "am",
+            "Name": "Amharic"
+        },
+        {
+            "isoCode": "ar",
+            "Name": "Arabic"
+        },
+        {
+            "isoCode": "an",
+            "Name": "Aragonese"
+        },
+        {
+            "isoCode": "hy",
+            "Name": "Armenian"
+        },
+        {
+            "isoCode": "hy",
+            "Name": "Armenian"
+        },
+        {
+            "isoCode": "as",
+            "Name": "Assamese"
+        },
+        {
+            "isoCode": "av",
+            "Name": "Avaric"
+        },
+        {
+            "isoCode": "ae",
+            "Name": "Avestan"
+        },
+        {
+            "isoCode": "ay",
+            "Name": "Aymara"
+        },
+        {
+            "isoCode": "az",
+            "Name": "Azerbaijani"
+        },
+        {
+            "isoCode": "bm",
+            "Name": "Bambara"
+        },
+        {
+            "isoCode": "ba",
+            "Name": "Bashkir"
+        },
+        {
+            "isoCode": "eu",
+            "Name": "Basque"
+        },
+        {
+            "isoCode": "eu",
+            "Name": "Basque"
+        },
+        {
+            "isoCode": "be",
+            "Name": "Belarusian"
+        },
+        {
+            "isoCode": "bn",
+            "Name": "Bengali"
+        },
+        {
+            "isoCode": "bh",
+            "Name": "Bihari languages"
+        },
+        {
+            "isoCode": "bi",
+            "Name": "Bislama"
+        },
+        {
+            "isoCode": "nb",
+            "Name": "Bokmål, Norwegian; Norwegian Bokmål"
+        },
+        {
+            "isoCode": "bs",
+            "Name": "Bosnian"
+        },
+        {
+            "isoCode": "br",
+            "Name": "Breton"
+        },
+        {
+            "isoCode": "bg",
+            "Name": "Bulgarian"
+        },
+        {
+            "isoCode": "my",
+            "Name": "Burmese"
+        },
+        {
+            "isoCode": "my",
+            "Name": "Burmese"
+        },
+        {
+            "isoCode": "ca",
+            "Name": "Catalan; Valencian"
+        },
+        {
+            "isoCode": "km",
+            "Name": "Central Khmer"
+        },
+        {
+            "isoCode": "ch",
+            "Name": "Chamorro"
+        },
+        {
+            "isoCode": "ce",
+            "Name": "Chechen"
+        },
+        {
+            "isoCode": "ny",
+            "Name": "Chichewa; Chewa; Nyanja"
+        },
+        {
+            "isoCode": "zh",
+            "Name": "Chinese"
+        },
+        {
+            "isoCode": "zh",
+            "Name": "Chinese"
+        },
+        {
+            "isoCode": "cu",
+            "Name": "Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic"
+        },
+        {
+            "isoCode": "cv",
+            "Name": "Chuvash"
+        },
+        {
+            "isoCode": "kw",
+            "Name": "Cornish"
+        },
+        {
+            "isoCode": "co",
+            "Name": "Corsican"
+        },
+        {
+            "isoCode": "cr",
+            "Name": "Cree"
+        },
+        {
+            "isoCode": "hr",
+            "Name": "Croatian"
+        },
+        {
+            "isoCode": "cs",
+            "Name": "Czech"
+        },
+        {
+            "isoCode": "cs",
+            "Name": "Czech"
+        },
+        {
+            "isoCode": "da",
+            "Name": "Danish"
+        },
+        {
+            "isoCode": "dv",
+            "Name": "Divehi; Dhivehi; Maldivian"
+        },
+        {
+            "isoCode": "nl",
+            "Name": "Dutch; Flemish"
+        },
+        {
+            "isoCode": "nl",
+            "Name": "Dutch; Flemish"
+        },
+        {
+            "isoCode": "dz",
+            "Name": "Dzongkha"
+        },
+        {
+            "isoCode": "en",
+            "Name": "English"
+        },
+        {
+            "isoCode": "eo",
+            "Name": "Esperanto"
+        },
+        {
+            "isoCode": "et",
+            "Name": "Estonian"
+        },
+        {
+            "isoCode": "ee",
+            "Name": "Ewe"
+        },
+        {
+            "isoCode": "fo",
+            "Name": "Faroese"
+        },
+        {
+            "isoCode": "fj",
+            "Name": "Fijian"
+        },
+        {
+            "isoCode": "fi",
+            "Name": "Finnish"
+        },
+        {
+            "isoCode": "fr",
+            "Name": "French"
+        },
+        {
+            "isoCode": "fr",
+            "Name": "French"
+        },
+        {
+            "isoCode": "ff",
+            "Name": "Fulah"
+        },
+        {
+            "isoCode": "gd",
+            "Name": "Gaelic; Scottish Gaelic"
+        },
+        {
+            "isoCode": "gl",
+            "Name": "Galician"
+        },
+        {
+            "isoCode": "lg",
+            "Name": "Ganda"
+        },
+        {
+            "isoCode": "ka",
+            "Name": "Georgian"
+        },
+        {
+            "isoCode": "ka",
+            "Name": "Georgian"
+        },
+        {
+            "isoCode": "de",
+            "Name": "German"
+        },
+        {
+            "isoCode": "de",
+            "Name": "German"
+        },
+        {
+            "isoCode": "el",
+            "Name": "Greek, Modern (1453-)"
+        },
+        {
+            "isoCode": "el",
+            "Name": "Greek, Modern (1453-)"
+        },
+        {
+            "isoCode": "gn",
+            "Name": "Guarani"
+        },
+        {
+            "isoCode": "gu",
+            "Name": "Gujarati"
+        },
+        {
+            "isoCode": "ht",
+            "Name": "Haitian; Haitian Creole"
+        },
+        {
+            "isoCode": "ha",
+            "Name": "Hausa"
+        },
+        {
+            "isoCode": "he",
+            "Name": "Hebrew"
+        },
+        {
+            "isoCode": "hz",
+            "Name": "Herero"
+        },
+        {
+            "isoCode": "hi",
+            "Name": "Hindi"
+        },
+        {
+            "isoCode": "ho",
+            "Name": "Hiri Motu"
+        },
+        {
+            "isoCode": "hu",
+            "Name": "Hungarian"
+        },
+        {
+            "isoCode": "is",
+            "Name": "Icelandic"
+        },
+        {
+            "isoCode": "is",
+            "Name": "Icelandic"
+        },
+        {
+            "isoCode": "io",
+            "Name": "Ido"
+        },
+        {
+            "isoCode": "ig",
+            "Name": "Igbo"
+        },
+        {
+            "isoCode": "id",
+            "Name": "Indonesian"
+        },
+        {
+            "isoCode": "ia",
+            "Name": "Interlingua (International Auxiliary Language Association)"
+        },
+        {
+            "isoCode": "ie",
+            "Name": "Interlingue; Occidental"
+        },
+        {
+            "isoCode": "iu",
+            "Name": "Inuktitut"
+        },
+        {
+            "isoCode": "ik",
+            "Name": "Inupiaq"
+        },
+        {
+            "isoCode": "ga",
+            "Name": "Irish"
+        },
+        {
+            "isoCode": "it",
+            "Name": "Italian"
+        },
+        {
+            "isoCode": "ja",
+            "Name": "Japanese"
+        },
+        {
+            "isoCode": "jv",
+            "Name": "Javanese"
+        },
+        {
+            "isoCode": "kl",
+            "Name": "Kalaallisut; Greenlandic"
+        },
+        {
+            "isoCode": "kn",
+            "Name": "Kannada"
+        },
+        {
+            "isoCode": "kr",
+            "Name": "Kanuri"
+        },
+        {
+            "isoCode": "ks",
+            "Name": "Kashmiri"
+        },
+        {
+            "isoCode": "kk",
+            "Name": "Kazakh"
+        },
+        {
+            "isoCode": "ki",
+            "Name": "Kikuyu; Gikuyu"
+        },
+        {
+            "isoCode": "rw",
+            "Name": "Kinyarwanda"
+        },
+        {
+            "isoCode": "ky",
+            "Name": "Kirghiz; Kyrgyz"
+        },
+        {
+            "isoCode": "kv",
+            "Name": "Komi"
+        },
+        {
+            "isoCode": "kg",
+            "Name": "Kongo"
+        },
+        {
+            "isoCode": "ko",
+            "Name": "Korean"
+        },
+        {
+            "isoCode": "kj",
+            "Name": "Kuanyama; Kwanyama"
+        },
+        {
+            "isoCode": "ku",
+            "Name": "Kurdish"
+        },
+        {
+            "isoCode": "lo",
+            "Name": "Lao"
+        },
+        {
+            "isoCode": "la",
+            "Name": "Latin"
+        },
+        {
+            "isoCode": "lv",
+            "Name": "Latvian"
+        },
+        {
+            "isoCode": "li",
+            "Name": "Limburgan; Limburger; Limburgish"
+        },
+        {
+            "isoCode": "ln",
+            "Name": "Lingala"
+        },
+        {
+            "isoCode": "lt",
+            "Name": "Lithuanian"
+        },
+        {
+            "isoCode": "lu",
+            "Name": "Luba-Katanga"
+        },
+        {
+            "isoCode": "lb",
+            "Name": "Luxembourgish; Letzeburgesch"
+        },
+        {
+            "isoCode": "mk",
+            "Name": "Macedonian"
+        },
+        {
+            "isoCode": "mk",
+            "Name": "Macedonian"
+        },
+        {
+            "isoCode": "mg",
+            "Name": "Malagasy"
+        },
+        {
+            "isoCode": "ms",
+            "Name": "Malay"
+        },
+        {
+            "isoCode": "ms",
+            "Name": "Malay"
+        },
+        {
+            "isoCode": "ml",
+            "Name": "Malayalam"
+        },
+        {
+            "isoCode": "mt",
+            "Name": "Maltese"
+        },
+        {
+            "isoCode": "gv",
+            "Name": "Manx"
+        },
+        {
+            "isoCode": "mi",
+            "Name": "Maori"
+        },
+        {
+            "isoCode": "mi",
+            "Name": "Maori"
+        },
+        {
+            "isoCode": "mr",
+            "Name": "Marathi"
+        },
+        {
+            "isoCode": "mh",
+            "Name": "Marshallese"
+        },
+        {
+            "isoCode": "mn",
+            "Name": "Mongolian"
+        },
+        {
+            "isoCode": "na",
+            "Name": "Nauru"
+        },
+        {
+            "isoCode": "nv",
+            "Name": "Navajo; Navaho"
+        },
+        {
+            "isoCode": "nd",
+            "Name": "Ndebele, North; North Ndebele"
+        },
+        {
+            "isoCode": "nr",
+            "Name": "Ndebele, South; South Ndebele"
+        },
+        {
+            "isoCode": "ng",
+            "Name": "Ndonga"
+        },
+        {
+            "isoCode": "ne",
+            "Name": "Nepali"
+        },
+        {
+            "isoCode": "se",
+            "Name": "Northern Sami"
+        },
+        {
+            "isoCode": "no",
+            "Name": "Norwegian"
+        },
+        {
+            "isoCode": "nn",
+            "Name": "Norwegian Nynorsk; Nynorsk, Norwegian"
+        },
+        {
+            "isoCode": "oc",
+            "Name": "Occitan (post 1500)"
+        },
+        {
+            "isoCode": "oj",
+            "Name": "Ojibwa"
+        },
+        {
+            "isoCode": "or",
+            "Name": "Oriya"
+        },
+        {
+            "isoCode": "om",
+            "Name": "Oromo"
+        },
+        {
+            "isoCode": "os",
+            "Name": "Ossetian; Ossetic"
+        },
+        {
+            "isoCode": "pi",
+            "Name": "Pali"
+        },
+        {
+            "isoCode": "pa",
+            "Name": "Panjabi; Punjabi"
+        },
+        {
+            "isoCode": "fa",
+            "Name": "Persian"
+        },
+        {
+            "isoCode": "fa",
+            "Name": "Persian"
+        },
+        {
+            "isoCode": "pl",
+            "Name": "Polish"
+        },
+        {
+            "isoCode": "pt",
+            "Name": "Portuguese"
+        },
+        {
+            "isoCode": "ps",
+            "Name": "Pushto; Pashto"
+        },
+        {
+            "isoCode": "qu",
+            "Name": "Quechua"
+        },
+        {
+            "isoCode": "ro",
+            "Name": "Romanian; Moldavian; Moldovan"
+        },
+        {
+            "isoCode": "ro",
+            "Name": "Romanian; Moldavian; Moldovan"
+        },
+        {
+            "isoCode": "rm",
+            "Name": "Romansh"
+        },
+        {
+            "isoCode": "rn",
+            "Name": "Rundi"
+        },
+        {
+            "isoCode": "ru",
+            "Name": "Russian"
+        },
+        {
+            "isoCode": "sm",
+            "Name": "Samoan"
+        },
+        {
+            "isoCode": "sg",
+            "Name": "Sango"
+        },
+        {
+            "isoCode": "sa",
+            "Name": "Sanskrit"
+        },
+        {
+            "isoCode": "sc",
+            "Name": "Sardinian"
+        },
+        {
+            "isoCode": "sr",
+            "Name": "Serbian"
+        },
+        {
+            "isoCode": "sn",
+            "Name": "Shona"
+        },
+        {
+            "isoCode": "ii",
+            "Name": "Sichuan Yi; Nuosu"
+        },
+        {
+            "isoCode": "sd",
+            "Name": "Sindhi"
+        },
+        {
+            "isoCode": "si",
+            "Name": "Sinhala; Sinhalese"
+        },
+        {
+            "isoCode": "sk",
+            "Name": "Slovak"
+        },
+        {
+            "isoCode": "sk",
+            "Name": "Slovak"
+        },
+        {
+            "isoCode": "sl",
+            "Name": "Slovenian"
+        },
+        {
+            "isoCode": "so",
+            "Name": "Somali"
+        },
+        {
+            "isoCode": "st",
+            "Name": "Sotho, Southern"
+        },
+        {
+            "isoCode": "es",
+            "Name": "Spanish; Castilian"
+        },
+        {
+            "isoCode": "su",
+            "Name": "Sundanese"
+        },
+        {
+            "isoCode": "sw",
+            "Name": "Swahili"
+        },
+        {
+            "isoCode": "ss",
+            "Name": "Swati"
+        },
+        {
+            "isoCode": "sv",
+            "Name": "Swedish"
+        },
+        {
+            "isoCode": "tl",
+            "Name": "Tagalog"
+        },
+        {
+            "isoCode": "ty",
+            "Name": "Tahitian"
+        },
+        {
+            "isoCode": "tg",
+            "Name": "Tajik"
+        },
+        {
+            "isoCode": "ta",
+            "Name": "Tamil"
+        },
+        {
+            "isoCode": "tt",
+            "Name": "Tatar"
+        },
+        {
+            "isoCode": "te",
+            "Name": "Telugu"
+        },
+        {
+            "isoCode": "th",
+            "Name": "Thai"
+        },
+        {
+            "isoCode": "bo",
+            "Name": "Tibetan"
+        },
+        {
+            "isoCode": "bo",
+            "Name": "Tibetan"
+        },
+        {
+            "isoCode": "ti",
+            "Name": "Tigrinya"
+        },
+        {
+            "isoCode": "to",
+            "Name": "Tonga (Tonga Islands)"
+        },
+        {
+            "isoCode": "ts",
+            "Name": "Tsonga"
+        },
+        {
+            "isoCode": "tn",
+            "Name": "Tswana"
+        },
+        {
+            "isoCode": "tr",
+            "Name": "Turkish"
+        },
+        {
+            "isoCode": "tk",
+            "Name": "Turkmen"
+        },
+        {
+            "isoCode": "tw",
+            "Name": "Twi"
+        },
+        {
+            "isoCode": "ug",
+            "Name": "Uighur; Uyghur"
+        },
+        {
+            "isoCode": "uk",
+            "Name": "Ukrainian"
+        },
+        {
+            "isoCode": "ur",
+            "Name": "Urdu"
+        },
+        {
+            "isoCode": "uz",
+            "Name": "Uzbek"
+        },
+        {
+            "isoCode": "ve",
+            "Name": "Venda"
+        },
+        {
+            "isoCode": "vi",
+            "Name": "Vietnamese"
+        },
+        {
+            "isoCode": "vo",
+            "Name": "Volapük"
+        },
+        {
+            "isoCode": "wa",
+            "Name": "Walloon"
+        },
+        {
+            "isoCode": "cy",
+            "Name": "Welsh"
+        },
+        {
+            "isoCode": "cy",
+            "Name": "Welsh"
+        },
+        {
+            "isoCode": "fy",
+            "Name": "Western Frisian"
+        },
+        {
+            "isoCode": "wo",
+            "Name": "Wolof"
+        },
+        {
+            "isoCode": "xh",
+            "Name": "Xhosa"
+        },
+        {
+            "isoCode": "yi",
+            "Name": "Yiddish"
+        },
+        {
+            "isoCode": "yo",
+            "Name": "Yoruba"
+        },
+        {
+            "isoCode": "za",
+            "Name": "Zhuang; Chuang"
+        },
+        {
+            "isoCode": "zu",
+            "Name": "Zulu"
+        }
+
+
+    ]
+}
