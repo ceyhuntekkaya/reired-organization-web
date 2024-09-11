@@ -24,10 +24,11 @@ export default function BreadcrumbArea (){
                 <div className="row justify-content-center">
                     <div className="col">
                         <div className="bradcumb text-center">
-                            <h3>Adventure Grid View</h3>
+                            <h3>CAMPURORG</h3>
+
                             <ul>
-                                <li><Link to="/detail">Home</Link></li>
-                                <li>Adventure Grid View</li>
+
+                                <li>Dünyayı gezdirir....</li>
                             </ul>
                         </div>
                     </div>

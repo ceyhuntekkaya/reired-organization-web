@@ -58,7 +58,7 @@ export default function Header (){
                             <div className="main-menu-wrap">
                                 <nav className="gene-nav">
                                     <ul className="menu">
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Home</Link>
+                                        <li className="has-dropdown"><Link to="javascript:void(0)">TÜMÜ</Link>
                                             <ul>
                                                 <li><Link to="/">Homepage</Link></li>
                                                 <li><Link to="/about-us">about-us</Link></li>
@@ -80,15 +80,10 @@ export default function Header (){
 
                                             </ul>
                                         </li>
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Adventures</Link>
-                                            <ul>
-                                                <li><Link to="adventure-1.html">Adventure List One</Link></li>
-                                                <li><Link to="adventure-2.html">Adventure List Two</Link></li>
-                                                <li><Link to="adventure-3.html">Adventure List Three</Link></li>
-                                                <li><Link to="adventure-detail-1.html">Adventure Details</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Blog</Link>
+                                        <li><Link to="/">Ana Sayfa</Link></li>
+                                        <li><Link to="/about-us">Hakkımızda</Link></li>
+
+                                        <li className="has-dropdown"><Link to="javascript:void(0)">Hizmetlerimiz</Link>
                                             <ul>
                                                 <li><Link to="blog-1.html">Blog List One</Link></li>
                                                 <li><Link to="blog-2.html">Blog List Two</Link></li>
@@ -96,8 +91,7 @@ export default function Header (){
                                                 <li><Link to="blog-details.html">Blog Details</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Other
-                                            Pages</Link>
+                                        <li className="has-dropdown"><Link to="javascript:void(0)">Programlar</Link>
                                             <ul>
                                                 <li><Link to="about.html">About Us</Link></li>
                                                 <li><Link to="login.html">Log In</Link></li>
@@ -105,13 +99,8 @@ export default function Header (){
                                                 <li><Link to="404.html">Error</Link></li>
                                             </ul>
                                         </li>
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Cart Pages</Link>
-                                            <ul>
-                                                <li><Link to="cart.html">Cart</Link></li>
-                                                <li><Link to="check-out.html">Check Out</Link></li>
-                                            </ul>
-                                        </li>
-                                        <li><Link to="contact.html">Contact</Link></li>
+
+                                        <li><Link to="contact.html">İletişim</Link></li>
                                         <li className="icon"><Link to="login.html"><i
                                             className="far fa-user"></i>LOGIN</Link></li>
                                         <li className="icon"><Link to="cart.html"> <i

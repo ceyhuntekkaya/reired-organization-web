@@ -32,6 +32,7 @@ import App from "../App";
 import Home1 from "../app/home/Home1";
 import Home2 from "../app/home/Home2";
 import Home3 from "../app/home/Home3";
+import AllPages from "../app/AllPages";
 
 
 
@@ -39,7 +40,20 @@ const dashboardRoutes = [
 
 
 
-
+  {
+    path: "/all",
+    name: "Hakkımızda",
+    icon: IconUsers,
+    component: AllPages,
+    menu: true,
+    location: "",
+    overPath: "EXAMS",
+    auth: ["SUPER_ADMIN", "ADMIN"],
+    sort: 0,
+    sidePanelVisible: true,
+    image:"../img/bg/adventure-1.jpg",
+    fullScreen: false
+  },
   {
     path: "/about-us",
     name: "Hakkımızda",
@@ -69,7 +83,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/adventure-detail",
+    path: "/adventure-detail/:id",
     name: "Okul Projeleri",
     icon: IconUsers,
     component: AdventureDetail,

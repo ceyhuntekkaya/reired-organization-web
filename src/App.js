@@ -42,23 +42,13 @@ function App() {
                 //loadingPanel()
             }
             <div className="wrapper">
-                <Header/>
-                <BreadcrumbArea/>
-                <TravelListOne/>
-                <TravelListTwo/>
-                <TravelListGrid/>
-                <Error/>
-                <SignUp/>
-                <Checkout/>
-                <CartList/>
-                <Contact/>
-                <Login/>
-                <AboutUs/>
-                <AdventureDetailPart/>
+
+
+
                 <AdventureGridArea/>
                 <SubscribeArea/>
-                <PartnerArea/>
-                <Footer/>
+
+
             </div>
         </>
     );

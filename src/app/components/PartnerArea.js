@@ -5,8 +5,8 @@ export default function PartnerArea (){
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="section-title text-center">
-                            <p className="title">Our Partners</p>
-                            <h2>We team up with the best to give you <span></span> an unmatchable experience
+                            <p className="title">İş BİRLİKLERİMİZ</p>
+                            <h2>SİZE EŞSİZ BİR DENEYİM SUNMAK İÇİN<span></span> EN İYİLERLE BİRLİKTE ÇALIŞIYORUZ
                             </h2>
                         </div>
                     </div>

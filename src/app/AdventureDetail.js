@@ -4,15 +4,16 @@ import AdventureGridArea from "./adventure/AdventureGridArea";
 import SubscribeArea from "./adventure/SubscribeArea";
 import PartnerArea from "./components/PartnerArea";
 import Footer from "./components/Footer";
+import AdventureDetailPart from "./adventure-detail/AdventureDetailPart";
 
 export default function AdventureDetail (){
 
     return (
         <div className="wrapper">
 
-            <AdventureGridArea/>
-            <SubscribeArea/>
-            <PartnerArea/>
+            <AdventureDetailPart/>
+
+
 
         </div>
     )

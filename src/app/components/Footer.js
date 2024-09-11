@@ -8,12 +8,8 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-lg-3 col-sm-6">
                             <div className="widget contact-widget">
-                                <h3>About AdventureGene</h3>
-                                <p>Adventure is all about having the freedom to follow your curiosity and
-                                    discovering the unknown. No
-                                    matter the Travel Style, our tours balance well-planned itineraries with the
-                                    flexibility to do your
-                                    own thing and explore a bit on your own.</p>
+                                <h3>Campus.org hakkında</h3>
+                                <p>Campuorg Turizm, merkezi Kanada, Toronto’da olup, yurtdışında orta öğretim sonrası eğitimi takip eden uluslararası öğrencilere destek sağlayan bir danışmanlık merkezidir. Kuruluşundan (2007) bu yana Orta Doğu’da, özellikle de Türkiye’de sağlam bir çevre geliştirmiş ve kısa bir zamanda öğrenci kabulünde en çok tercih edilen kuruluşlardan biri haline gelmiştir.</p>
                                 <ul>
                                     <li><Link to="/detail"><i className="fab fa-facebook-f"></i></Link></li>
                                     <li><Link to="adventure-1.html#"><i className="fab fa-twitter"></i></Link></li>
@@ -88,12 +84,11 @@ export default function Footer() {
                             <div className="widget contact-us">
                                 <h3>Contact Us</h3>
                                 <ul>
-                                    <li><Link to="adventure-1.html#"><i className="fal fa-paper-plane"></i>Level 1,
-                                        14-16 Church Street
-                                        Queenstown, New Zealand</Link></li>
-                                    <li><Link to="adventure-1.html#"><i className="fal fa-envelope"></i>support@adventuregene.com</Link>
+                                    <li><Link to="adventure-1.html#"><i className="fal fa-paper-plane"></i>
+                                        İşçi Blokları Mah. Muhsin Yazıcıoğlu Cad. Regnum SkyTower 17.kat No:57/50, 06530 Çankaya/Ankara</Link></li>
+                                    <li><Link to="adventure-1.html#"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
                                     </li>
-                                    <li><Link to="adventure-1.html#"><i className="fal fa-phone-alt"></i>+ 001 800
+                                    <li><Link to="adventure-1.html#"><i className="fal fa-phone-alt"></i>+ 90 800
                                         661 9073</Link></li>
                                 </ul>
                             </div>
@@ -116,7 +111,7 @@ export default function Footer() {
                         </div>
                         <div className="col-sm-6">
                             <div className="copyright-text">
-                                <p>© 2024 AdventureGene.com All rights reserved.</p>
+                                <p>© 2024 campusorg.com All rights reserved.</p>
                             </div>
                         </div>
                     </div>

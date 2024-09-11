@@ -5,11 +5,9 @@ export default function SubscribeArea (){
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="section-title">
-                            <p className="title">SIGN UP FOR OUR NEWSLETTER</p>
-                            <h2>Sign up for travel deals,<span></span> news and inspiration</h2>
-                            <p>Join our community of over 300,000 global readers who receive emails filled with
-                                news, promotions,
-                                and other good stuff from G Adventures.</p>
+                            <p className="title">HABER BÜLTENİMİZE KAYDOLUN</p>
+                            <h2>Seyahat fırsatları,<span></span> haberler ve ilham kaynakları için kaydolun</h2>
+                            <p>Bizden haberler, promosyonlar ve diğer güzel şeylerle dolu e-postalar alan 300.000'den fazla küresel okuyucudan oluşan topluluğumuza katılın.</p>
                         </div>
                         <form action="adventure-1.html#" method="post" className="subscribe-form">
                             <input name="email" className="widget-input"

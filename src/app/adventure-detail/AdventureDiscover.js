@@ -1,10 +1,10 @@
-export default function AdventureDiscover (){
+export default function AdventureDiscover (props){
+    const project = props.project;
     return (
         <div className="row justify-content-center pb-50 pt-50">
             <div className="col-lg-10">
                 <div className="dis-alpine section-title text-center">
-                    <h2>Discover Alpine Landscapes & Enchanting <span></span> Villages on a Swiss Mountain
-                        Adventure</h2>
+                    <h2>{project.name} <span></span> ...</h2>
                     <div className="sin-sis-alpine-wrap">
                         <div className="row">
                             <div className="col-sm-4">
