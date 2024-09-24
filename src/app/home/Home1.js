@@ -16,18 +16,18 @@ export default function Home1() {
                                     <div className="col-lg-6 col-sm-3">
                                         <div className="header-top-left">
                                             <ul>
-                                                <li className="has-dropdown"><Link to="index.html#">USD</Link>
+                                                <li className="has-dropdown"><Link to="/main">USD</Link>
                                                     <ul>
-                                                        <li><Link to="index.html#">URO</Link></li>
-                                                        <li><Link to="index.html#">FJD</Link></li>
-                                                        <li><Link to="index.html#">GBP</Link></li>
+                                                        <li><Link to="/">URO</Link></li>
+                                                        <li><Link to="/">FJD</Link></li>
+                                                        <li><Link to="/">GBP</Link></li>
                                                     </ul>
                                                 </li>
-                                                <li className="has-dropdown"><Link to="index.html#">English</Link>
+                                                <li className="has-dropdown"><Link to="/">English</Link>
                                                     <ul>
-                                                        <li><Link to="index.html#">Arabic</Link></li>
-                                                        <li><Link to="index.html#">French</Link></li>
-                                                        <li><Link to="index.html#">Bangla</Link></li>
+                                                        <li><Link to="/">Arabic</Link></li>
+                                                        <li><Link to="/">French</Link></li>
+                                                        <li><Link to="/">Bangla</Link></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -39,7 +39,7 @@ export default function Home1() {
                                             <div className="header-top-contact">
                                                 <ul>
                                                     <li><Link to="mailto:yourname@email.com"><i
-                                                        className="fal fa-envelope"></i>support@adventuregene.com</Link>
+                                                        className="fal fa-envelope"></i>support@campusorg.com</Link>
                                                     </li>
                                                     <li><Link to="tel:+008012345678"><i
                                                         className="fal fa-phone-alt"></i>012 345 6789</Link>
@@ -58,7 +58,7 @@ export default function Home1() {
                                         { //<!-- Start site logo --> 
                             }
                                             <div className="site-logo">
-                                            <Link to="index.html"><img src="img/logo.png" alt="GENE"/></Link>
+                                            <Link to="/" ><img src="img/logo.png" alt="GENE"/></Link>
                                             </div>
                                         { //<!-- End site logo --> 
                             }
@@ -72,7 +72,7 @@ export default function Home1() {
                                             <li className="has-dropdown"><Link to="javascript:void(0)">Home</Link>
                                             <ul>{ //<!-- Dropdown Items --> 
                             }
-                                            <li><Link to="index.html">Homepage V1</Link></li>
+                                            <li><Link to="/" >Homepage V1</Link></li>
                                             <li><Link to="index-2.html">Homepage V2</Link></li>
                                             <li><Link to="index-3.html">Homepage V3</Link></li>
                                             </ul>
@@ -126,11 +126,11 @@ export default function Home1() {
                             }
                                             <div className="login-cart">
                                             <ul>
-                                            <li><Link to="index.html#"><i className="far fa-user"></i>LOGIN</Link></li>
+                                            <li><Link to="/"><i className="far fa-user"></i>LOGIN</Link></li>
                                             <li className="cart-mega">
                                         { //<!-- Header Cart Start --> 
                             }
-                                            <Link to="index.html#ec-side-cart" className="ec-header-btn ec-side-toggle">
+                                            <Link to="/"  className="ec-header-btn ec-side-toggle">
                                             <div className="header-icon"><i
                                             className="fal fa-shopping-basket"></i><small>(0)</small></div>
                                             </Link>
@@ -440,7 +440,7 @@ export default function Home1() {
                                             Adventure Treks isn’t just about outdoor adventure for teens; it’s about you! We
                                             want you to discover your best self, and we believe that the great outdoors is just
                                             the way to do it.</p>
-                                            <Link to="index.html#" className="btn btn-theme">Get To Know Our Values</Link>
+                                            <Link to="/" className="btn btn-theme">Get To Know Our Values</Link>
                                             </div>
                                             </div>
                                             </div>
@@ -472,7 +472,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/1.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Hiking & Trekking</h5></Link>
+                                            <Link to="/"><h5>Hiking & Trekking</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -485,7 +485,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/2.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Cycling Tours</h5></Link>
+                                            <Link to="/"><h5>Cycling Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -498,7 +498,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/3.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Family Tours</h5></Link>
+                                            <Link to="/"><h5>Family Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -511,7 +511,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/4.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Wildlife Tours</h5></Link>
+                                            <Link to="/"><h5>Wildlife Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -526,7 +526,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/5.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Polar Tours</h5></Link>
+                                            <Link to="/"><h5>Polar Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -539,7 +539,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/6.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Food Tours</h5></Link>
+                                            <Link to="/"><h5>Food Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -552,7 +552,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/7.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>ruise Tours</h5></Link>
+                                            <Link to="/"><h5>ruise Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -565,7 +565,7 @@ export default function Home1() {
                                             <div className="single-adventure">
                                             <img src="img/adventure/8.jpg" alt="adventure"/>
                                             <div className="adventure-content">
-                                            <Link to="index.html#"><h5>Beach Tours</h5></Link>
+                                            <Link to="/"><h5>Beach Tours</h5></Link>
                                             <p>Responsible travel has always been at the core of what we do.</p>
                                             </div>
                                             </div>
@@ -693,7 +693,7 @@ export default function Home1() {
                                             tours we’re running in August and September, and if you see something that’s up
                                             your alley, book away! We’re just as excited as you to explore our big,
                                             beautiful world.</p>
-                                            <Link to="index.html#" className="btn btn-theme mt-30">See all the tours we're
+                                            <Link to="/" className="btn btn-theme mt-30">See all the tours we're
                                             running</Link>
                                             </div>
                                         { //<!-- End single selling tips --> 
@@ -707,7 +707,7 @@ export default function Home1() {
                                             <img src="img/adventure/2.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>Adventure Cycling in Peru</h6></Link>
+                                            <Link to="/"><h6>Adventure Cycling in Peru</h6></Link>
                                             <p className="price">$1574 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -721,7 +721,7 @@ export default function Home1() {
                                             <img src="img/adventure/3.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>Best of Spain & Portugal</h6></Link>
+                                            <Link to="/"><h6>Best of Spain & Portugal</h6></Link>
                                             <p className="price">$2564 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -737,7 +737,7 @@ export default function Home1() {
                                             <img src="img/adventure/1.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>Adventure Cycling in Peru</h6></Link>
+                                            <Link to="/"><h6>Adventure Cycling in Peru</h6></Link>
                                             <p className="price">$1950 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -751,7 +751,7 @@ export default function Home1() {
                                             <img src="img/adventure/5.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>Polar Tours</h6></Link>
+                                            <Link to="/"><h6>Polar Tours</h6></Link>
                                             <p className="price">$1587 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -765,7 +765,7 @@ export default function Home1() {
                                             <img src="img/adventure/6.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>Food Tours</h6></Link>
+                                            <Link to="/"><h6>Food Tours</h6></Link>
                                             <p className="price">$1236 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -779,7 +779,7 @@ export default function Home1() {
                                             <img src="img/adventure/7.jpg" alt="adventure"/>
                                             <div className="adventure-content">
                                             <p className="tour">5 DAY TOUR</p>
-                                            <Link to="index.html#"><h6>ruise Tours</h6></Link>
+                                            <Link to="/"><h6>ruise Tours</h6></Link>
                                             <p className="price">$2548 <small>Per Person</small></p>
                                             </div>
                                             </div>
@@ -851,7 +851,7 @@ export default function Home1() {
                                             <p>12 <span>May</span></p>
                                             </div>
                                             <div className="post-blog-content">
-                                            <Link to="index.html#"><h4>Will yacht tourism set to boom post-pandemic?</h4></Link>
+                                            <Link to="/"><h4>Will yacht tourism set to boom post-pandemic?</h4></Link>
                                             <p>Currently, the yacht charter market is predicted to register a CAGR of about 4%
                                             during the forecast period (2020 - 2025).</p>
                                             </div>
@@ -870,7 +870,7 @@ export default function Home1() {
                                             <p>12 <span>May</span></p>
                                             </div>
                                             <div className="post-blog-content">
-                                            <Link to="index.html#"><h4>Travel will bounce back sooner than expected</h4></Link>
+                                            <Link to="/"><h4>Travel will bounce back sooner than expected</h4></Link>
                                             <p>Currently, the yacht charter market is predicted to register a CAGR of about 4%
                                             during the forecast period (2020 - 2025).</p>
                                             </div>
@@ -889,7 +889,7 @@ export default function Home1() {
                                             <p>12 <span>May</span></p>
                                             </div>
                                             <div className="post-blog-content">
-                                            <Link to="index.html#"><h4>Darjeeling & Kalimpong Open Doors for Tourists</h4></Link>
+                                            <Link to="/"><h4>Darjeeling & Kalimpong Open Doors for Tourists</h4></Link>
                                             <p>Currently, the yacht charter market is predicted to register a CAGR of about 4%
                                             during the forecast period (2020 - 2025).</p>
                                             </div>
@@ -908,7 +908,7 @@ export default function Home1() {
                                             <p>12 <span>May</span></p>
                                             </div>
                                             <div className="post-blog-content">
-                                            <Link to="index.html#"><h4>Bir Billing Paragliding to Start from 15th Sep.</h4></Link>
+                                            <Link to="/"><h4>Bir Billing Paragliding to Start from 15th Sep.</h4></Link>
                                             <p>Currently, the yacht charter market is predicted to register a CAGR of about 4%
                                             during the forecast period (2020 - 2025).</p>
                                             </div>
@@ -947,13 +947,13 @@ export default function Home1() {
                                             <img src="img/guide/1.jpg" alt=""/>
                                             <div className="guide-content">
                                             <p className="title">Adventure Manager</p>
-                                            <Link to="index.html#"><h4>Chris Kearney</h4></Link>
+                                            <Link to="/"><h4>Chris Kearney</h4></Link>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-twitter"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-instagram"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-linkedin-in"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-youtube"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-twitter"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-instagram"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-youtube"></i></Link></li>
                                             </ul>
                                             <div className="about-guide">
                                             <p>Tasked with finding the freshest and most sustainable adventures around
@@ -974,13 +974,13 @@ export default function Home1() {
                                             <img src="img/guide/2.jpg" alt=""/>
                                             <div className="guide-content">
                                             <p className="title">Customer Experience Manager</p>
-                                            <Link to="index.html#"><h4>Megan Devenish</h4></Link>
+                                            <Link to="/"><h4>Megan Devenish</h4></Link>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-twitter"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-instagram"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-linkedin-in"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-youtube"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-twitter"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-instagram"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-youtube"></i></Link></li>
                                             </ul>
                                             <div className="about-guide">
                                             <p>Tasked with finding the freshest and most sustainable adventures around
@@ -1001,13 +1001,13 @@ export default function Home1() {
                                             <img src="img/guide/3.jpg" alt=""/>
                                             <div className="guide-content">
                                             <p className="title">Travel Specialist</p>
-                                            <Link to="index.html#"><h4>Dan Bloomfield</h4></Link>
+                                            <Link to="/"><h4>Dan Bloomfield</h4></Link>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-twitter"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-instagram"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-linkedin-in"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-youtube"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-twitter"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-instagram"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-youtube"></i></Link></li>
                                             </ul>
                                             <div className="about-guide">
                                             <p>Tasked with finding the freshest and most sustainable adventures around
@@ -1113,11 +1113,11 @@ export default function Home1() {
                                             the unknown. No matter the Travel Style, our tours balance well-planned itineraries
                                             with the flexibility to do your own thing and explore a bit on your own.</p>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fab fa-facebook-f"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-twitter"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-instagram"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-linkedin-in"></i></Link></li>
-                                            <li><Link to="index.html#"><i className="fab fa-youtube"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-twitter"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-instagram"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-linkedin-in"></i></Link></li>
+                                            <li><Link to="/"><i className="fab fa-youtube"></i></Link></li>
                                             </ul>
                                             </div>
                                         { //<!-- end contact widget --> 
@@ -1129,15 +1129,15 @@ export default function Home1() {
                                             <div className="widget quick-link-widget">
                                             <h3>Quick Links</h3>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>About Us</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Why Travel With Us?</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>About Us</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Why Travel With Us?</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Guides & Staff</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Guides & Staff</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Contact Us</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>We Are Hiring</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Contact Us</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>We Are Hiring</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Our Core Values</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Our Core Values</Link>
                                             </li>
                                             </ul>
                                             </div>
@@ -1150,17 +1150,17 @@ export default function Home1() {
                                             <div className="widget quick-link-categories">
                                             <h3>Categories</h3>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Adventure</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Hiking &
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Adventure</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Hiking &
                                             Trekking</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Cycling Tours</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Cycling Tours</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Family Tours</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Family Tours</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Wildlife Tours</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Wildlife Tours</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Polar Tours</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Food Tours</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Polar Tours</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Food Tours</Link></li>
                                             </ul>
                                             </div>
                                         { //<!-- end quick link widget --> 
@@ -1172,16 +1172,16 @@ export default function Home1() {
                                             <div className="widget quick-destinations">
                                             <h3>Destinations</h3>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>African Safaris</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>African Safaris</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Alaska & Canada</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Alaska & Canada</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>South America</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>South America</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Middle East</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Asia</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>Europe</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-angle-right"></i>South America</Link>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Middle East</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Asia</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>Europe</Link></li>
+                                            <li><Link to="/"><i className="fal fa-angle-right"></i>South America</Link>
                                             </li>
                                             </ul>
                                             </div>
@@ -1194,11 +1194,11 @@ export default function Home1() {
                                             <div className="widget contact-us">
                                             <h3>Contact Us</h3>
                                             <ul>
-                                            <li><Link to="index.html#"><i className="fal fa-paper-plane"></i>Level 1, 14-16
+                                            <li><Link to="/"><i className="fal fa-paper-plane"></i>Level 1, 14-16
                                             Church Street Queenstown, New Zealand</Link></li>
-                                            <li><Link to="index.html#"><i className="fal fa-envelope"></i>support@adventuregene.com</Link>
+                                            <li><Link to="/"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
                                             </li>
-                                            <li><Link to="index.html#"><i className="fal fa-phone-alt"></i>+ 001 800 661 9073</Link>
+                                            <li><Link to="/"><i className="fal fa-phone-alt"></i>+ 001 800 661 9073</Link>
                                             </li>
                                             </ul>
                                             </div>
@@ -1220,10 +1220,10 @@ export default function Home1() {
                             }
                                             <div className="copy-payment">
                                             <ul>
-                                            <li><Link to="index.html#"><img src="img/payment/1.png" alt=""/></Link></li>
-                                            <li><Link to="index.html#"><img src="img/payment/2.png" alt=""/></Link></li>
-                                            <li><Link to="index.html#"><img src="img/payment/3.png" alt=""/></Link></li>
-                                            <li><Link to="index.html#"><img src="img/payment/4.png" alt=""/></Link></li>
+                                            <li><Link to="/"><img src="img/payment/1.png" alt=""/></Link></li>
+                                            <li><Link to="/"><img src="img/payment/2.png" alt=""/></Link></li>
+                                            <li><Link to="/"><img src="img/payment/3.png" alt=""/></Link></li>
+                                            <li><Link to="/"><img src="img/payment/4.png" alt=""/></Link></li>
                                             </ul>
                                             </div>
                                         { //<!-- End payment --> 

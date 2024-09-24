@@ -6,6 +6,7 @@ export default function AdventureLeft (props){
         <div className="alpine-left-content mb-40">
 
             <div>
+
                 <div dangerouslySetInnerHTML={{__html: project.leftContent}}/>
 
             </div>

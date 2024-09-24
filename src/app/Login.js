@@ -11,37 +11,33 @@ export default function Login (){
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-7">
                         <div className="section-title font-s30">
-                            <p className="title">Log in and let's get going</p>
-                            <h2>Please log in to view, cancel or modify your reservations.</h2>
+                            <p className="title">Öğrenci Kayıt</p>
+                            <h2>Okulunuz ile ilgili tüm organizasyonları görmel için giriş yapınız.</h2>
                         </div>
                         <div className="login-form">
                             <ul>
                                 <li><Link className="facebook" to="login.html#"><i
-                                    className="fab fa-facebook-f"></i> Login With Facebook</Link></li>
-                                <li><Link className="twiter" to="/login"><i className="fab fa-twitter"></i> Login
-                                    With Twitter</Link></li>
+                                    className="fab fa-facebook-f"></i> Facebook</Link></li>
+                                <li><Link className="twiter" to="/login"><i className="fab fa-twitter"></i> Twitter</Link></li>
                                 <li><Link className="google" to="login.html#"><i
-                                    className="fab fa-linkedin-in"></i> Login With Google</Link></li>
+                                    className="fab fa-linkedin-in"></i> oogle</Link></li>
                             </ul>
                             <form action="login.html#" className="gane-form">
                                 <div className="form-left">
                                     <div className="form-title">
-                                        <h4>Billing Details</h4>
+                                        <h4>Kullanıcı Bilgileri</h4>
                                     </div>
                                     <div className="single-field half-field">
-                                        <input type="text" className="form-control" placeholder="First Name"/>
+                                        <input type="text" className="form-control" placeholder="İsim"/>
                                     </div>
                                     <div className="single-field half-field-last">
-                                        <input type="text" className="form-control" placeholder="Last Name"/>
+                                        <input type="text" className="form-control" placeholder="Soyisim"/>
                                     </div>
                                     <div className="single-field ">
-                                        <input type="text" className="form-control" placeholder="Last Name"/>
+                                        <input type="text" className="form-control" placeholder="MAil Adresi"/>
                                     </div>
-                                    <div className="password">
-                                        <p><input type="checkbox"/>Remember Password</p>
-                                        <p>Forgot your <Link to="login.html#">password?</Link></p>
-                                    </div>
-                                    <button className="btn btn-theme" type="submit">Ploace Order</button>
+
+                                    <button className="btn btn-theme" type="submit">Kaydol</button>
                                 </div>
                             </form>
                         </div>

@@ -33,6 +33,9 @@ import Home1 from "../app/home/Home1";
 import Home2 from "../app/home/Home2";
 import Home3 from "../app/home/Home3";
 import AllPages from "../app/AllPages";
+import ProjectList from "../app/ProjectList";
+import CampusList from "../app/CampusList";
+import BlankPage from "../BlankPage";
 
 
 
@@ -225,7 +228,7 @@ const dashboardRoutes = [
 
 
   {
-    path: "/",
+    path: "/main",
     name: "Dashboard",
     icon: IconUsers,
     component: App,
@@ -235,12 +238,25 @@ const dashboardRoutes = [
     auth: ["SUPER_ADMIN", "ADMIN"],
     sort: 0,
     sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
+    image:"../img/bg/adventure-2.jpg",
     fullScreen: false
   },
 
 
-
+  {
+    path: "/",
+    name: "Dashboard",
+    icon: IconUsers,
+    component: BlankPage,
+    menu: true,
+    location: "",
+    overPath: "EXAMS",
+    auth: ["SUPER_ADMIN", "ADMIN"],
+    sort: 0,
+    sidePanelVisible: true,
+    image:"../img/bg/adventure-2.jpg",
+    fullScreen: false
+  },
   {
     path: "/home1",
     name: "Dashboard",
@@ -274,6 +290,38 @@ const dashboardRoutes = [
     name: "Dashboard",
     icon: IconUsers,
     component: Home3,
+    menu: true,
+    location: "",
+    overPath: "EXAMS",
+    auth: ["SUPER_ADMIN", "ADMIN"],
+    sort: 0,
+    sidePanelVisible: true,
+    image:"../img/bg/adventure-1.jpg",
+    fullScreen: false
+  },
+
+
+
+
+  {
+    path: "/campus/:id",
+    name: "Dashboard",
+    icon: IconUsers,
+    component: CampusList,
+    menu: true,
+    location: "",
+    overPath: "EXAMS",
+    auth: ["SUPER_ADMIN", "ADMIN"],
+    sort: 0,
+    sidePanelVisible: true,
+    image:"../img/bg/adventure-1.jpg",
+    fullScreen: false
+  },
+  {
+    path: "/project/:id",
+    name: "Dashboard",
+    icon: IconUsers,
+    component: ProjectList,
     menu: true,
     location: "",
     overPath: "EXAMS",

@@ -1,21 +1,7 @@
 import './App.css';
-import Header from "./app/components/Header";
-import BreadcrumbArea from "./app/components/BreadcrumbArea";
 import AdventureGridArea from "./app/adventure/AdventureGridArea";
 import SubscribeArea from "./app/adventure/SubscribeArea";
-import PartnerArea from "./app/components/PartnerArea";
-import Footer from "./app/components/Footer";
-import AdventureDetailPart from "./app/adventure-detail/AdventureDetailPart";
-import AboutUs from "./app/AboutUs";
-import Login from "./app/Login";
-import Contact from "./app/Contact";
-import CartList from "./app/CartList";
-import Checkout from "./app/Checkout";
-import SignUp from "./app/SignUp";
-import Error from "./app/Error";
-import TravelListOne from "./app/TravelListOne";
-import TravelListTwo from "./app/TravelListTwo";
-import TravelListGrid from "./app/TravelListGrid";
+
 
 function App() {
 
@@ -42,13 +28,8 @@ function App() {
                 //loadingPanel()
             }
             <div className="wrapper">
-
-
-
                 <AdventureGridArea/>
                 <SubscribeArea/>
-
-
             </div>
         </>
     );

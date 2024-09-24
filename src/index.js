@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 import AppContextProvider from "./configs/AppContextProvider";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Error from "./app/Error";
@@ -38,25 +37,38 @@ root.render(
     <AppContextProvider>
         <BrowserRouter>
             <div className="wrapper">
-                <Header/>
-                <BreadcrumbArea/>
-                <Routes>
-                    {
-                        routes.sort(compare).map((route, key) => (
-                            route.auth.includes(role) ?
-                                <Route key={key} path={route.path} element={<route.component {...route} />}/> : null
-                        ))
-                    }
-                    <Route path="*" element={<Error/>}/>
-                </Routes>
-                <PartnerArea/>
-                <Footer/>
+
+                {
+                    !routes.find(route => route.path === window.location.pathname) ?
+
+                        <Routes>
+                            {
+                                routes.sort(compare).map((route, key) => (
+                                    route.auth.includes(role) ?
+                                        <Route key={key} path={route.path} element={<route.component {...route} />}/> : null
+                                ))
+                            }
+                            <Route path="*" element={<Error/>}/>
+                        </Routes> : <>
+                            <Header/>
+                            <BreadcrumbArea/>
+                            <Routes>
+                                {
+                                    routes.sort(compare).map((route, key) => (
+                                        route.auth.includes(role) ?
+                                            <Route key={key} path={route.path} element={<route.component {...route} />}/> : null
+                                    ))
+                                }
+                                <Route path="*" element={<Error/>}/>
+                            </Routes>
+                            <PartnerArea/>
+                            <Footer/>
+                        </>
+                }
+
             </div>
         </BrowserRouter>
     </AppContextProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+

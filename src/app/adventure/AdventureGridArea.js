@@ -36,6 +36,79 @@ const pagination =()=>{
 }
 
 
+
+const AdventureGrid = () => {
+        return (
+            <div className="adventure-grid-area pt-80 pb-105">
+                <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <div className="adventure-select">
+                                <form action="adventure-1.html#" className="adventure-select-form">
+                                    <select className="form-select dn-small" aria-label="Default select example">
+                                        <option selected>Select Adventure Type</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                    </select>
+                                    <select className="form-select" aria-label="Default select example">
+                                        <option selected>Select Price</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                    </select>
+                                    <select className="form-select dn-small" aria-label="Default select example">
+                                        <option selected>Select Destination</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                    </select>
+                                    <input type="date" name="date"/>
+                                    <div className="view-grid">
+                                        <ul>
+                                            <li className="active"><Link to="adventure-1.html#"><i
+                                                className="fal fa-th"></i></Link></li>
+                                            <li><Link to="adventure-1.html#"><i className="fal fa-list-ul"></i></Link>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+
+
+                        {
+                            activeProjectList && Array.isArray(activeProjectList) ?
+                                activeProjectList.map((project, key) =>
+                                    <div className="col-lg-4 col-sm-6">
+                                        <div className="single-adventure">
+                                            <img src={project.smallBanner} alt="adventure"/>
+                                            <div className="adventure-content">
+                                                {
+                                                    // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
+                                                }
+
+                                                <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6>
+                                                </Link>
+                                                <p>{project.description}</p>
+                                                {
+                                                    //<p className="price">Detaylı bilgi <small>Per Person</small></p>
+                                                }
+                                                <p className="btn btn-success"><Link
+                                                    to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ) : null
+                        }
+                    </div>
+                    {
+                        // pagination()
+                    }
+                </div>
+            </div>
+        )
+}
+
     return (
         <div className="adventure-grid-area pt-80 pb-105">
             <div className="container">
@@ -44,29 +117,21 @@ const pagination =()=>{
                         <div className="adventure-select">
                             <form action="adventure-1.html#" className="adventure-select-form">
                                 <select className="form-select dn-small" aria-label="Default select example">
-                                    <option selected>Select Adventure Type</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
+                                    <option selected>Tur Türü</option>
+                                    <option value="1">Eğitim</option>
+                                    <option value="2">Bilim</option>
+                                    <option value="2">Gezi</option>
                                 </select>
-                                <select className="form-select" aria-label="Default select example">
-                                    <option selected>Select Price</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                </select>
+
                                 <select className="form-select dn-small" aria-label="Default select example">
-                                    <option selected>Select Destination</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
+                                    <option selected>Bölge</option>
+                                    <option value="1">Avrupa</option>
+                                    <option value="2">Amerika</option>
+                                    <option value="2">Kanada</option>
+                                    <option value="2">Afrika</option>
                                 </select>
-                                <input type="date" name="date"/>
-                                <div className="view-grid">
-                                    <ul>
-                                        <li className="active"><Link to="adventure-1.html#"><i
-                                            className="fal fa-th"></i></Link></li>
-                                        <li><Link to="adventure-1.html#"><i className="fal fa-list-ul"></i></Link>
-                                        </li>
-                                    </ul>
-                                </div>
+
+
                             </form>
                         </div>
                     </div>
@@ -85,12 +150,14 @@ const pagination =()=>{
                                                 // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
                                             }
 
-                                            <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6></Link>
+                                            <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6>
+                                            </Link>
                                             <p>{project.description}</p>
                                             {
                                                 //<p className="price">Detaylı bilgi <small>Per Person</small></p>
                                             }
-                                            <p className="btn btn-success"><Link to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
+                                            <p className="btn btn-success"><Link
+                                                to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
                                         </div>
                                     </div>
                                 </div>
@@ -98,9 +165,10 @@ const pagination =()=>{
                     }
                 </div>
                 {
-                   // pagination()
+                    // pagination()
                 }
             </div>
         </div>
+
     )
 }

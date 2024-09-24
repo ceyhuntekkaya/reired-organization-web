@@ -39,7 +39,7 @@ export default function Home2() {
                             }
                             <div className="header-top-contact">
                                 <ul>
-                                    <li><Link to="mailto:yourname@email.com"><i className="fal fa-envelope"></i>support@adventuregene.com</Link>
+                                    <li><Link to="mailto:yourname@email.com"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
                                     </li>
                                     <li><Link to="tel:+008012345678"><i className="fal fa-phone-alt"></i>012 345 6789</Link>
                                     </li>
@@ -57,7 +57,7 @@ export default function Home2() {
                                 { //<!-- Start site logo --> 
                             }
                                 <div className="site-logo">
-                                    <Link to="index.html"><img src="img/logo-3.png" alt="GENE"/></Link>
+                                    <Link to="/" ><img src="img/logo-3.png" alt="GENE"/></Link>
                                 </div>
                                 { //<!-- End site logo --> 
                             }
@@ -71,7 +71,7 @@ export default function Home2() {
                                             <li className="has-dropdown"><Link to="javascript:void(0)">Home</Link>
                                                 <ul>{ //<!-- Dropdown Items --> 
                             }
-                                                    <li><Link to="index.html">Homepage V1</Link></li>
+                                                    <li><Link to="/" >Homepage V1</Link></li>
                                                     <li><Link to="index-2.html">Homepage V2</Link></li>
                                                     <li><Link to="index-3.html">Homepage V3</Link></li>
                                                 </ul>
@@ -1192,7 +1192,7 @@ export default function Home2() {
                                 <ul>
                                     <li><Link to="index-2.html#"><i className="fal fa-paper-plane"></i>Level 1, 14-16
                                         Church Street Queenstown, New Zealand</Link></li>
-                                    <li><Link to="index-2.html#"><i className="fal fa-envelope"></i>support@adventuregene.com</Link>
+                                    <li><Link to="index-2.html#"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
                                     </li>
                                     <li><Link to="index-2.html#"><i className="fal fa-phone-alt"></i>+ 001 800 661
                                         9073</Link></li>

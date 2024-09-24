@@ -1,63 +1,75 @@
 import {Link} from "react-router-dom";
+import AdventureGridArea from "../adventure/AdventureGridArea";
+import {useApi} from "../../service/useApi";
+import {useEffect} from "react";
 
 export default function SimilarTrips (){
+    const [activeProjectList, setActiveProjectList] = useApi([]);
+
+
+    useEffect(() => {
+
+        setActiveProjectList("getActiveProject").then(r => null)
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+
+    const travelList=()=>{
+        return (
+            <div className="adventure-grid-area pt-80 pb-105">
+                <div className="container">
+
+                    <div className="row">
+
+
+                        {
+                            activeProjectList && Array.isArray(activeProjectList) ?
+                                activeProjectList.map((project, key) =>
+                                    key<3 ?
+                                    <div key={key} className="col-lg-4 col-sm-6">
+                                        <div className="single-adventure">
+                                            <img src={"../"+project.smallBanner} alt="adventure"/>
+                                            <div className="adventure-content">
+                                                {
+                                                    // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
+                                                }
+
+                                                <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6></Link>
+                                                <p>{project.description}</p>
+                                                {
+                                                    //<p className="price">Detaylı bilgi <small>Per Person</small></p>
+                                                }
+                                                <p className="btn btn-success"><Link to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
+                                            </div>
+                                        </div>
+                                    </div> : null
+                                ) : null
+                        }
+                    </div>
+                    {
+                        // pagination()
+                    }
+                </div>
+            </div>
+        )
+    }
     return (
         <div className="adve-detail-area pt-90">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-7">
                         <div className="section-title text-center">
-                            <p className="title">SIMILAR TRIPS</p>
-                            <h2>You May Also Enjoy <span></span> Our Other Trips</h2>
+                            <p className="title">Benzer Geziler</p>
+                            <h2>Katılabileceğiniz Diğer Geziler</h2>
                         </div>
                     </div>
                 </div>
+
                 <div className="row">
-                    <div className="col">
-                        <div className="adv-similar-detail-wrap owl-carousel">
-                            <div className="single-adventure">
-                                <img src="img/adventure/g3.jpg" alt="adventure"/>
-                                <div className="adventure-content">
-                                    <p className="tour">6 Days - 18 People Max - Multi-activity</p>
-                                    <Link to="/detail"><h6>Croatia Dalmatian Coast Tour</h6></Link>
-                                    <p>Our wonderful team of travel professionals take people for camping and give
-                                        them the best trekking experience ever.</p>
-                                    <h4>$3998 <small>Per Person</small></h4>
-                                </div>
-                            </div>
-                            <div className="single-adventure">
-                                <img src="img/adventure/g4.jpg" alt="adventure"/>
-                                <div className="adventure-content">
-                                    <p className="tour">9 Nights - Remote Rides - Wild Adventures</p>
-                                    <Link to="adventure-detail-1.html#"><h6>Circumnavigate Kilimanjaro by Bike</h6>
-                                    </Link>
-                                    <p>Our wonderful team of travel professionals take people for camping and give
-                                        them the best trekking experience ever.</p>
-                                    <h4>$1931 <small>Per Person</small></h4>
-                                </div>
-                            </div>
-                            <div className="single-adventure">
-                                <img src="img/adventure/g5.jpg" alt="adventure"/>
-                                <div className="adventure-content">
-                                    <p className="tour">4 Nights - 14 People Max - Wild Hikes</p>
-                                    <Link to="adventure-detail-1.html#"><h6>The 3 Peaks Challenge in Morocco</h6></Link>
-                                    <p>Our wonderful team of travel professionals take people for camping and give
-                                        them the best trekking experience ever.</p>
-                                    <h4>$390 <small>Per Person</small></h4>
-                                </div>
-                            </div>
-                            <div className="single-adventure">
-                                <img src="img/adventure/g6.jpg" alt="adventure"/>
-                                <div className="adventure-content">
-                                    <p className="tour">6 Days - 12 People Max - Multi-activity</p>
-                                    <Link to="adventure-detail-1.html#"><h6>Adventure Hiking in Namibia</h6></Link>
-                                    <p>Our wonderful team of travel professionals take people for camping and give
-                                        them the best trekking experience ever.</p>
-                                    <h4>$1188 <small>Per Person</small></h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        travelList()
+                    }
                 </div>
             </div>
         </div>

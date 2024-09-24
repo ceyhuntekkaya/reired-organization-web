@@ -32,7 +32,10 @@ export default function AdventureDetailPart() {
                 <>
                     <div className="adventure-details-area pt-90 pb-110">
                         <div className="container">
-                            <AdventureSelect project={project}/>
+                            {
+                                // <AdventureSelect project={project}/>
+                            }
+
                             <AdventureDiscover project={project}/>
                             <div className="row">
                                 <div className="col-lg-6">

@@ -1,5 +1,18 @@
-export default function PartnerArea (){
-    return (
+import partner1 from '../../assets/partner/1-1.jpg'
+import partner2 from '../../assets/partner/2-2.jpg'
+import partner3 from '../../assets/partner/3-3.jpg'
+import partner4 from '../../assets/partner/4-4.jpg'
+import partner5 from '../../assets/partner/5-5.jpg'
+import partner6 from '../../assets/partner/6-6.jpg'
+
+
+export default function PartnerArea () {
+
+
+
+
+
+        return (
         <div className="partner-area pt-115 pb-220">
             <div className="container">
                 <div className="row justify-content-center">
@@ -13,35 +26,29 @@ export default function PartnerArea (){
                 </div>
                 <div className="row">
                     <div className="col">
-                        <div className="partner-wrap owl-carousel">
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/1.jpg" alt=""/>
-                                <img className="top" src="img/partner/1-1.jpg" alt=""/>
+                        <div className="row">
+                            <div className="col">
+                                <img className="top" src={partner1} alt=""/>
                             </div>
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/2.jpg" alt=""/>
-                                <img className="top" src="img/partner/2-2.jpg" alt=""/>
+                            <div className="col">
+                                <img className="top" src={partner2} alt=""/>
                             </div>
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/3.jpg" alt=""/>
-                                <img className="top" src="img/partner/3-3.jpg" alt=""/>
+                            <div className="col">
+                                <img className="top" src={partner3} alt=""/>
                             </div>
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/4.jpg" alt=""/>
-                                <img className="top" src="img/partner/4-4.jpg" alt=""/>
+                            <div className="col">
+                                <img className="top" src={partner4} alt=""/>
                             </div>
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/5.jpg" alt=""/>
-                                <img className="top" src="img/partner/5-5.jpg" alt=""/>
+                            <div className="col">
+                                <img className="top" src={partner5} alt=""/>
                             </div>
-                            <div className="single-partner">
-                                <img className="bottom" src="img/partner/6.jpg" alt=""/>
-                                <img className="top" src="img/partner/6-6.jpg" alt=""/>
+                            <div className="col">
+                                <img className="top" src={partner6} alt=""/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    )
-}
+        )
+        }

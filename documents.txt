@@ -1,0 +1,14 @@
+DOCKER_DEFAULT_PLATFORM=linux/amd64 docker compose build
+docker push ctekkaya/campusorg-web:1.0
+
+docker login -u ctekkaya -p Str11476500* docker.io
+
+
+https://senkaturizm.com
+
+ssh root@162.55.175.18
+kXKXuavnjAqbpwKHKMuE
+
+
+
+https://www.inmotionhosting.com/support/website/ssl/lets-encrypt-ssl-ubuntu-with-certbot/

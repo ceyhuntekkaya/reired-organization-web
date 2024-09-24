@@ -1,4 +1,4 @@
-export default function WhyUs (){
+export default function WhyUs() {
     return (
 
         <div className="about-adventure-area pt-110 pb-150">
@@ -6,18 +6,30 @@ export default function WhyUs (){
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <div className="section-title text-center">
-                            <p className="title">Why Adventuren is better than others?</p>
-                            <h2>It's Time To Hit The New <span></span> Path To Exploration.</h2>
+                            <p className="title">Yurtdışı Gezi Programımız</p>
+                            <h2>Öğrenciler İçin Unutulmaz Bir Deneyim </h2>
                         </div>
                     </div>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <p className="text-center mb-45">
-                            All adventure freaks! Will ya' like to blow down by the beauty of nature amidst sea,
-                            land and mountains in India? Aye! Then go ahead, Adventuren is here to immerse yourself
-                            in an outdoor adventure filled with stunning contrasts: intimate and communal,
-                            purposeful, raw and rich.
+
+
+                            Campusorg olarak, lise öğrencilerine unutulmaz bir deneyim yaşatmak için yurtdışı
+                            gezi programları düzenliyoruz. Öğrencilerimizin sadece akademik değil, aynı zamanda kültürel
+                            ve sanatsal gelişimlerine de katkıda bulunmak önceliğimiz.<br/><br/>
+
+
+                            Campusorg olarak amacımız, öğrencilerin sadece ders kitaplarından değil, aynı
+                            zamanda gerçek hayattan da öğrenmelerini sağlamak. Yurtdışı gezilerimiz, öğrencilerin
+                            özgüvenlerini artırmalarına, farklı kültürlere karşı hoşgörülü olmalarına ve geleceğe daha
+                            donanımlı bir şekilde hazırlanmalarına katkı sağlıyor.<br/><br/>
+
+                            Campusorg ile yurtdışı gezisi yapmak isteyen lise öğrencileri ve velileri için
+                            unutulmaz bir deneyim garantisi veriyoruz.<br/>
+
+
                         </p>
                     </div>
                 </div>
@@ -28,9 +40,9 @@ export default function WhyUs (){
                                 <img src="img/adventure/1.png" alt=""/>
                             </div>
                             <div className="about-ad-content">
-                                <h4>Travel Experiences</h4>
-                                <p>It’s time to pack your bags and get ready for your next adventure. Check out the
-                                    tours we’re running.</p>
+                                <h4>Öğrenci Odaklı Yaklaşım</h4>
+                                <p>Her öğrencinin farklı ihtiyaçlarını ve ilgi alanlarını göz önünde bulundurarak özel
+                                    programlar hazırlıyoruz.</p>
                             </div>
                         </div>
                     </div>
@@ -40,9 +52,9 @@ export default function WhyUs (){
                                 <img src="img/adventure/2.png" alt=""/>
                             </div>
                             <div className="about-ad-content">
-                                <h4>Internation Travel</h4>
-                                <p>It’s time to pack your bags and get ready for your next adventure. Check out the
-                                    tours we’re running.</p>
+                                <h4>Deneyimli Rehberler</h4>
+                                <p>IAlanında uzman ve deneyimli rehberlerimiz, öğrencilerin hem güvenliği hem de
+                                    öğrenimi için yanlarında oluyor.</p>
                             </div>
                         </div>
                     </div>
@@ -52,9 +64,47 @@ export default function WhyUs (){
                                 <img src="img/adventure/3.png" alt=""/>
                             </div>
                             <div className="about-ad-content">
-                                <h4>Best Price Guaranted</h4>
-                                <p>It’s time to pack your bags and get ready for your next adventure. Check out the
-                                    tours we’re running.</p>
+                                <h4>Kapsamlı Gezi Rotaları</h4>
+                                <p>ITarihi ve kültürel zenginlikleriyle öne çıkan şehirleri ziyaret ederek öğrencilerin
+                                    ufkunu genişletiyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-lg-4 col-sm-6">
+                        <div className="single-about-adventure text-center">
+                            <div className="about-ad-thumb">
+                                <img src="img/adventure/1.png" alt=""/>
+                            </div>
+                            <div className="about-ad-content">
+                                <h4>Dil Eğitimi</h4>
+                                <p>İsteğe bağlı olarak dil eğitimi programları düzenleyerek öğrencilerin yabancı dil
+                                    becerilerini geliştirmelerine yardımcı oluyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6">
+                        <div className="single-about-adventure text-center">
+                            <div className="about-ad-thumb">
+                                <img src="img/adventure/2.png" alt=""/>
+                            </div>
+                            <div className="about-ad-content">
+                                <h4>Eğlenceli Aktiviteler</h4>
+                                <p>Müzeler, sanat galerileri, tarihi yapılar gibi kültürel mekanların yanı sıra
+                                    eğlenceli etkinliklerle dolu bir program sunuyoruz.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-sm-6">
+                        <div className="single-about-adventure text-center">
+                            <div className="about-ad-thumb">
+                                <img src="img/adventure/3.png" alt=""/>
+                            </div>
+                            <div className="about-ad-content">
+                                <h4>Konaklama ve Yeme-İçme</h4>
+                                <p>Öğrencilerimizin konforu için özenle seçilmiş konaklama tesisleri ve yerel
+                                    lezzetlerin tadına varabilecekleri yemek seçenekleri sunuyoruz.</p>
                             </div>
                         </div>
                     </div>

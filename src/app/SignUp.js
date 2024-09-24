@@ -10,8 +10,8 @@ export default function SignUp (){
                     </div>
                     <div className="col-xl-6 col-lg-7 col-md-7">
                         <div className="section-title font-s30">
-                            <p className="title">CREATE NEW ACCOUNT</p>
-                            <h2>PLEASE LOG IN TO VIEW, CANCEL OR MODIFY YOUR RESERVATIONS.</h2>
+                            <p className="title">Öğrenci Kayıt</p>
+                            <h2>Okulunuz ile ilgili tüm organizasyonları görmel için giriş yapınız.</h2>
                         </div>
                         <div className="login-form">
                             <ul>
