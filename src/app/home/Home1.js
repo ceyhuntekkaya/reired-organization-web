@@ -16,7 +16,7 @@ export default function Home1() {
                                     <div className="col-lg-6 col-sm-3">
                                         <div className="header-top-left">
                                             <ul>
-                                                <li className="has-dropdown"><Link to="/main">USD</Link>
+                                                <li className="has-dropdown"><Link to="/">USD</Link>
                                                     <ul>
                                                         <li><Link to="/">URO</Link></li>
                                                         <li><Link to="/">FJD</Link></li>

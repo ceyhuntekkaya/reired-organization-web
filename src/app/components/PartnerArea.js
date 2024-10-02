@@ -13,6 +13,7 @@ export default function PartnerArea () {
 
 
         return (
+            window.location.pathname === "/" ? null :
         <div className="partner-area pt-115 pb-220">
             <div className="container">
                 <div className="row justify-content-center">

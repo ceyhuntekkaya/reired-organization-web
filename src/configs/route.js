@@ -228,7 +228,7 @@ const dashboardRoutes = [
 
 
   {
-    path: "/main",
+    path: "/",
     name: "Dashboard",
     icon: IconUsers,
     component: App,
@@ -243,20 +243,7 @@ const dashboardRoutes = [
   },
 
 
-  {
-    path: "/",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: BlankPage,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-2.jpg",
-    fullScreen: false
-  },
+
   {
     path: "/home1",
     name: "Dashboard",

@@ -126,6 +126,7 @@ export default function Footer() {
         )
     }
     return (
+        window.location.pathname === "/" ? null :
         <>
             <footer className="footer-area pt-85 pb-60">
                 <div className="container">

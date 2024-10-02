@@ -1,22 +1,8 @@
-import {Link} from "react-router-dom";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export default function BreadcrumbArea (){
 
-    const[backgroundImage, setBackgroundImage] = useState("adventure-1")
-
-    useEffect(() => {
-        console.log(window.location.href)
-        console.log(window.location.pathname)
-    }, [window.location.href, window.location.pathname]);
-
-
-
-    useEffect(() => {
-        console.log(window.location.href)
-        console.log(window.location.pathname)
-    }, );
-
+    const[backgroundImage, ] = useState("adventure-1")
 
     return (
         <div className={`bradcumb-area ${backgroundImage} overlay-bg-2`}>

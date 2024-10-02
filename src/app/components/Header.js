@@ -6,18 +6,15 @@ import logo from '../../assets/logo.png'
 
 export default function Header() {
 
-
     const [schoolList, setSchoolList] = useApi([]);
     const [projectList, setProjectList] = useApi([]);
 
-
     useEffect(() => {
-
         setSchoolList("getAllSchools").then(r => null)
         setProjectList("getActiveProject").then(r => null)
-
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+
 
     const AllMenus = () => {
         return (
@@ -25,7 +22,7 @@ export default function Header() {
             <>
                 <li className="has-dropdown"><Link to="javascript:void(0)">TÜMÜ</Link>
                     <ul>
-                        <li><Link to="/main">Homepage</Link></li>
+                        <li><Link to="/">Homepage</Link></li>
                         <li><Link to="/about-us">about-us</Link></li>
                         <li><Link to="/adventure">adventure</Link></li>
                         <li><Link to="/adventure-detail">adventure-detail</Link></li>
@@ -49,6 +46,8 @@ export default function Header() {
         )
     }
     return (
+
+
         <header id="header" className="header-area style-2 header-border absulate-header">
             <div className="container">
 
@@ -66,7 +65,6 @@ export default function Header() {
                                 <li className="has-dropdown"><Link to="adventure-1.html#">Türkçe</Link>
                                     <ul>
                                         <li><Link to="adventure-1.html#">İngilizce</Link></li>
-
                                     </ul>
                                 </li>
                             </ul>
@@ -78,7 +76,8 @@ export default function Header() {
                             <ul>
                                 <li><Link to="mailto:yourname@email.com"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
                                 </li>
-                                <li><Link to="tel:+008012345678"><i className="fal fa-phone-alt"></i>012 345 6789</Link>
+                                <li><Link to="tel:+008012345678"><i className="fal fa-phone-alt"></i>012 345
+                                    6789</Link>
                                 </li>
                             </ul>
                         </div>
@@ -92,7 +91,7 @@ export default function Header() {
                         <div className="col-lg-2 col-sm-6 col-6">
 
                             <div className="site-logo">
-                                <Link to="/main"><img src={logo} alt="GENE"/></Link>
+                                <Link to="/"><img src={logo} alt="GENE"/></Link>
                             </div>
 
                         </div>
@@ -104,25 +103,29 @@ export default function Header() {
                                         {
                                             //AllMenus()
                                         }
-                                        <li><Link to="/main">Ana Sayfa</Link></li>
+                                        <li><Link to="/">Ana Sayfa</Link></li>
                                         <li><Link to="/about-us">Hakkımızda</Link></li>
 
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Okullarımız</Link>
+                                        <li className="has-dropdown"><Link
+                                            to="javascript:void(0)">Okullarımız</Link>
                                             <ul>
                                                 {
                                                     schoolList && Array.isArray(schoolList) && schoolList.map((item, index) => (
-                                                        <li key={index}><Link to={`/campus/${item.id}`}>{item.name}</Link>
+                                                        <li key={index}><Link
+                                                            to={`/campus/${item.id}`}>{item.name}</Link>
                                                         </li>
                                                     ))
                                                 }
 
                                             </ul>
                                         </li>
-                                        <li className="has-dropdown"><Link to="javascript:void(0)">Programlar</Link>
+                                        <li className="has-dropdown"><Link
+                                            to="javascript:void(0)">Programlar</Link>
                                             <ul>
                                                 {
                                                     projectList && Array.isArray(projectList) && projectList.map((item, index) => (
-                                                        <li key={index}><Link to={`/project/${item.id}`}>{item.name}</Link>
+                                                        <li key={index}><Link
+                                                            to={`/project/${item.id}`}>{item.name}</Link>
                                                         </li>
                                                     ))
                                                 }
@@ -132,12 +135,13 @@ export default function Header() {
                                         <li><Link to="/contact">İletişim</Link></li>
                                         <li className="icon"><Link to="/login"><i
                                             className="far fa-user"></i>LOGIN</Link></li>
-                                        <li className="icon"><Link to="/main">
+                                        <li className="icon"><Link to="/">
                                             {
                                                 // <li className="icon"><Link to="/cart-list">
                                             }
                                             <i
-                                            className="fal fa-shopping-basket"></i><small>(2)</small></Link></li>
+                                                className="fal fa-shopping-basket"></i><small>(2)</small></Link>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -147,5 +151,7 @@ export default function Header() {
                 </div>
             </div>
         </header>
+
+
     )
 }

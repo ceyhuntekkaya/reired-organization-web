@@ -9,10 +9,10 @@ import Header from "./app/components/Header";
 import BreadcrumbArea from "./app/components/BreadcrumbArea";
 
 
-
-
 import PartnerArea from "./app/components/PartnerArea";
 import Footer from "./app/components/Footer";
+import App from "./App";
+import BlankPage from "./BlankPage";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -32,39 +32,27 @@ let role = "ADMIN"
 if (localStorage.getItem("user_data"))
     role = JSON.parse(localStorage.getItem("user_data")).role
 
-
+console.log(window.location.href)
 root.render(
     <AppContextProvider>
         <BrowserRouter>
             <div className="wrapper">
 
-                {
-                    !routes.find(route => route.path === window.location.pathname) ?
 
-                        <Routes>
-                            {
-                                routes.sort(compare).map((route, key) => (
-                                    route.auth.includes(role) ?
-                                        <Route key={key} path={route.path} element={<route.component {...route} />}/> : null
-                                ))
-                            }
-                            <Route path="*" element={<Error/>}/>
-                        </Routes> : <>
-                            <Header/>
-                            <BreadcrumbArea/>
-                            <Routes>
-                                {
-                                    routes.sort(compare).map((route, key) => (
-                                        route.auth.includes(role) ?
-                                            <Route key={key} path={route.path} element={<route.component {...route} />}/> : null
-                                    ))
-                                }
-                                <Route path="*" element={<Error/>}/>
-                            </Routes>
-                            <PartnerArea/>
-                            <Footer/>
-                        </>
-                }
+                <Header/>
+                <BreadcrumbArea/>
+                <Routes>
+                    {
+                        routes.sort(compare).map((route, key) => (
+                            route.auth.includes(role) ?
+                                <Route key={key} path={route.path}
+                                       element={<route.component {...route} />}/> : null
+                        ))
+                    }
+                    <Route path="*" element={<Error/>}/>
+                </Routes>
+                <PartnerArea/>
+                <Footer/>
 
             </div>
         </BrowserRouter>
