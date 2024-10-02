@@ -32,23 +32,60 @@ export const useApi = () => {
         setResult(response);
     };
 
+    const checkSchoolCode = async (code) => {
+        const response = await Request("get", `${config.api.invokeUrl}/institution/code/${code}`);
+        setResult(response);
+    };
 
+    const getSchoolCampusList = async (schoolId) => {
+        const response = await Request("get", `${config.api.invokeUrl}/institution/campus/${schoolId}`);
+        setResult(response);
+    };
+
+
+    const createUserStudent = async (data) => {
+        const response = await Request("post", `${config.api.invokeUrl}/user/`, data);
+        setResult(response);
+    };
+
+
+    const findSchoolProjectBySchool = async (schoolId) => {
+        const response = await Request("get", `${config.api.invokeUrl}/school/project/school/${schoolId}`);
+        setResult(response);
+    };
+
+
+    const studentLogin = async (identityNumber) => {
+        const response = await Request("get", `${config.api.invokeUrl}/user/student/login/${identityNumber}`);
+        setResult(response);
+    };
 
     const handleChange = async (type, data) => {
         if (type === "getActiveProject") {
             await getActiveProject();
-
         } else  if (type === "getProjectById") {
             await getProjectById(data);
-
         }
         else  if (type === "getSchoolById") {
             await getSchoolById(data);
-
         }
         else  if (type === "getAllSchools") {
             await getAllSchools();
-
+        }
+        else  if (type === "checkSchoolCode") {
+            await checkSchoolCode(data);
+        }
+        else  if (type === "getSchoolCampusList") {
+            await getSchoolCampusList(data);
+        }
+        else  if (type === "createUserStudent") {
+            await createUserStudent(data);
+        }
+        else  if (type === "findSchoolProjectBySchool") {
+            await findSchoolProjectBySchool(data);
+        }
+        else  if (type === "studentLogin") {
+            await studentLogin(data);
         }
 
     };

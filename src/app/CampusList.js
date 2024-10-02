@@ -1,32 +1,36 @@
 import {useApi} from "../service/useApi";
-import {useEffect} from "react";
+import {useContext, useEffect} from "react";
 import {Link, useParams} from "react-router-dom";
+import config from "../configs/config.json";
+import ProjectCard from "./components/ProjectCard";
+import {AppContext} from "../configs/AppContextProvider";
+import Login from "./Login";
 
 export default function CampusList() {
     const [activeProjectList, setActiveProjectList] = useApi([]);
     const [school, setSchool] = useApi([]);
+    const userContext = useContext(AppContext);
     let {id} = useParams();
+
     useEffect(() => {
-        console.log(id)
         setSchool("getSchoolById", id).then(r => null)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
-        console.log(id)
         setSchool("getSchoolById", id).then(r => null)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id]);
 
-
     useEffect(() => {
-        setActiveProjectList("getActiveProject").then(r => null)
+        if(userContext?.student) {
+            setActiveProjectList("findSchoolProjectBySchool",userContext?.student.school.id).then(r => null)
+        }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    }, [userContext.parent]);
 
-    console.log(activeProjectList)
 
 
     const beginArea = () => {
@@ -88,50 +92,32 @@ export default function CampusList() {
     }
 
 
-
     return (
         <>
             {
                 beginArea()
             }
-        <div className="adventure-grid-area pt-80 pb-105">
+            <div className="adventure-grid-area pt-80 pb-105">
 
-            <div className="container">
+                <div className="container">
 
-                <div className="row">
+                    <div className="row">
+                        {
+                            userContext.parent ?
+                                activeProjectList && Array.isArray(activeProjectList) ?
+                                    activeProjectList.map((project, key) =>
+                                        <ProjectCard key={key} project={project}/>
+                                    ) : null
+                                : <Login/>
+                        }
 
 
+                    </div>
                     {
-                        activeProjectList && Array.isArray(activeProjectList) ?
-                            activeProjectList.map((project, key) =>
-                                key<4 ?
-                                <div key={key} className="col-lg-4 col-sm-6">
-                                    <div className="single-adventure">
-                                        <img src={`../${project.smallBanner}`} alt="adventure"/>
-                                        <div className="adventure-content">
-                                            {
-                                                // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
-                                            }
-
-                                            <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6>
-                                            </Link>
-                                            <p>{project.description}</p>
-                                            {
-                                                //<p className="price">Detaylı bilgi <small>Per Person</small></p>
-                                            }
-                                            <p className="btn btn-success"><Link
-                                                to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
-                                        </div>
-                                    </div>
-                                </div> : null
-                            ) : null
+                        // pagination()
                     }
                 </div>
-                {
-                    // pagination()
-                }
             </div>
-        </div>
         </>
     )
 }

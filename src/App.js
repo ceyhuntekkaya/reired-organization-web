@@ -5,7 +5,6 @@ import SubscribeArea from "./app/adventure/SubscribeArea";
 
 function App() {
 
-console.log("BURADA...")
     const loadingPanel = () => {
 
         return (

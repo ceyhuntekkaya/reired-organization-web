@@ -32,7 +32,6 @@ let role = "ADMIN"
 if (localStorage.getItem("user_data"))
     role = JSON.parse(localStorage.getItem("user_data")).role
 
-console.log(window.location.href)
 root.render(
     <AppContextProvider>
         <BrowserRouter>

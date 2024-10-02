@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
-import {useEffect} from "react";
+import {useContext, useEffect} from "react";
 import {useApi} from "../../service/useApi";
+import {AppContext} from "../../configs/AppContextProvider";
 
 import logo from '../../assets/logo.png'
 
@@ -8,6 +9,8 @@ export default function Header() {
 
     const [schoolList, setSchoolList] = useApi([]);
     const [projectList, setProjectList] = useApi([]);
+    const userContext = useContext(AppContext);
+
 
     useEffect(() => {
         setSchoolList("getAllSchools").then(r => null)
@@ -23,22 +26,22 @@ export default function Header() {
                 <li className="has-dropdown"><Link to="javascript:void(0)">TÜMÜ</Link>
                     <ul>
                         <li><Link to="/">Homepage</Link></li>
-                        <li><Link to="/about-us">about-us</Link></li>
-                        <li><Link to="/adventure">adventure</Link></li>
-                        <li><Link to="/adventure-detail">adventure-detail</Link></li>
-                        <li><Link to="/cart-list">Card List</Link></li>
-                        <li><Link to="/check-out">check-out</Link></li>
-                        <li><Link to="/contact">contact</Link></li>
-                        <li><Link to="/error">error</Link></li>
-                        <li><Link to="/sing-up">sing-up</Link></li>
-                        <li><Link to="/travel/grid">/travel/grid</Link></li>
-                        <li><Link to="/travel/one">travel/one</Link></li>
-                        <li><Link to="/travel/two">travel/two</Link></li>
-                        <li><Link to="/login">login</Link></li>
+                        <li><Link to="/page/about-us">about-us</Link></li>
+                        <li><Link to="/page/adventure">adventure</Link></li>
+                        <li><Link to="/page/adventure-detail">adventure-detail</Link></li>
+                        <li><Link to="/page/cart-list">Card List</Link></li>
+                        <li><Link to="/page/check-out">check-out</Link></li>
+                        <li><Link to="/page/contact">contact</Link></li>
+                        <li><Link to="/page/error">error</Link></li>
+                        <li><Link to="/page/sing-up">sing-up</Link></li>
+                        <li><Link to="/page/travel/grid">/travel/grid</Link></li>
+                        <li><Link to="/page/travel/one">travel/one</Link></li>
+                        <li><Link to="/page/travel/two">travel/two</Link></li>
+                        <li><Link to="/page/login">login</Link></li>
 
-                        <li><Link to="/home1">home1</Link></li>
-                        <li><Link to="/home2">home2</Link></li>
-                        <li><Link to="/home3">home3</Link></li>
+                        <li><Link to="/page/home1">home1</Link></li>
+                        <li><Link to="/page/home2">home2</Link></li>
+                        <li><Link to="/page/home3">home3</Link></li>
 
                     </ul>
                 </li>
@@ -57,7 +60,7 @@ export default function Header() {
                             <ul>
                                 <li className="has-dropdown"><Link to="adventure-1.html#">USD</Link>
                                     <ul>
-                                        <li><Link to="/detail">URO</Link></li>
+                                        <li><Link to="/page/detail">URO</Link></li>
                                         <li><Link to="adventure-1.html#">FJD</Link></li>
                                         <li><Link to="adventure-1.html#">GBP</Link></li>
                                     </ul>
@@ -91,7 +94,7 @@ export default function Header() {
                         <div className="col-lg-2 col-sm-6 col-6">
 
                             <div className="site-logo">
-                                <Link to="/"><img src={logo} alt="GENE"/></Link>
+                                <Link to="/page/"><img src={logo} alt="GENE"/></Link>
                             </div>
 
                         </div>
@@ -104,7 +107,7 @@ export default function Header() {
                                             //AllMenus()
                                         }
                                         <li><Link to="/">Ana Sayfa</Link></li>
-                                        <li><Link to="/about-us">Hakkımızda</Link></li>
+                                        <li><Link to="/page/about-us">Hakkımızda</Link></li>
 
                                         <li className="has-dropdown"><Link
                                             to="javascript:void(0)">Okullarımız</Link>
@@ -112,7 +115,7 @@ export default function Header() {
                                                 {
                                                     schoolList && Array.isArray(schoolList) && schoolList.map((item, index) => (
                                                         <li key={index}><Link
-                                                            to={`/campus/${item.id}`}>{item.name}</Link>
+                                                            to={`/page/campus/${item.id}`}>{item.name}</Link>
                                                         </li>
                                                     ))
                                                 }
@@ -125,19 +128,20 @@ export default function Header() {
                                                 {
                                                     projectList && Array.isArray(projectList) && projectList.map((item, index) => (
                                                         <li key={index}><Link
-                                                            to={`/project/${item.id}`}>{item.name}</Link>
+                                                            to={`/page/project/${item.id}`}>{item.name}</Link>
                                                         </li>
                                                     ))
                                                 }
                                             </ul>
                                         </li>
 
-                                        <li><Link to="/contact">İletişim</Link></li>
-                                        <li className="icon"><Link to="/login"><i
+                                        <li><Link to="/page/contact">İletişim</Link></li>
+                                        <li><Link to="/page/sing-up">Kayıt</Link></li>
+                                        <li className="icon"><Link to="/page/login"><i
                                             className="far fa-user"></i>LOGIN</Link></li>
-                                        <li className="icon"><Link to="/">
+                                        <li className="icon"><Link to="/page/">
                                             {
-                                                // <li className="icon"><Link to="/cart-list">
+                                                // <li className="icon"><Link to="/page/cart-list">
                                             }
                                             <i
                                                 className="fal fa-shopping-basket"></i><small>(2)</small></Link>

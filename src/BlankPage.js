@@ -19,7 +19,6 @@ export default function BlankPage (){
 
 
 
-    console.log("BURADA... 455")
     return (
         <div className="login-area pt-90">
             <div className="container">

@@ -1,6 +1,8 @@
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 import {useApi} from "../../service/useApi";
+import ProjectCard from "../components/ProjectCard";
+const config = require("../../configs/config.json");
 
 export default function AdventureGridArea (){
     const [activeProjectList, setActiveProjectList] = useApi([]);
@@ -13,7 +15,6 @@ export default function AdventureGridArea (){
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(activeProjectList)
 
 const pagination =()=>{
     return (
@@ -81,7 +82,7 @@ const AdventureGrid = () => {
                                 activeProjectList.map((project, key) =>
                                     <div className="col-lg-4 col-sm-6">
                                         <div className="single-adventure">
-                                            <img src={project.smallBanner} alt="adventure"/>
+                                            <img src={`${config.api.invokeUrl}${project.smallBanner}`} alt="adventure"/>
                                             <div className="adventure-content">
                                                 {
                                                     // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
@@ -142,25 +143,10 @@ const AdventureGrid = () => {
                     {
                         activeProjectList && Array.isArray(activeProjectList) ?
                             activeProjectList.map((project, key) =>
-                                <div className="col-lg-4 col-sm-6">
-                                    <div className="single-adventure">
-                                        <img src={project.smallBanner} alt="adventure"/>
-                                        <div className="adventure-content">
-                                            {
-                                                // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
-                                            }
-
-                                            <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6>
-                                            </Link>
-                                            <p>{project.description}</p>
-                                            {
-                                                //<p className="price">Detaylı bilgi <small>Per Person</small></p>
-                                            }
-                                            <p className="btn btn-success"><Link
-                                                to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
-                                        </div>
-                                    </div>
-                                </div>
+                                activeProjectList && Array.isArray(activeProjectList) ?
+                                    activeProjectList.map((project, key) =>
+                                        <ProjectCard key={key} project={project}/>
+                                    ) : null
                             ) : null
                     }
                 </div>

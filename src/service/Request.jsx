@@ -17,7 +17,6 @@ export default async function Request(method, url, body) {
 
     if (method === "get") {
         try {
-            console.log("get", url)
             const res = await axios.get(url, config);
             return res.data;
         } catch (err) {
@@ -25,7 +24,6 @@ export default async function Request(method, url, body) {
         }
     } else if (method === "patch") {
         try {
-            console.log("patch", url, body)
             const res = await axios.patch(url, body, config);
             return res.data;
         } catch (err) {
@@ -33,7 +31,6 @@ export default async function Request(method, url, body) {
         }
     } else if (method === "delete") {
         try {
-            console.log("delete", url)
             const res = await axios.delete(url, config);
             return res.data;
         } catch (err) {
@@ -41,7 +38,6 @@ export default async function Request(method, url, body) {
         }
     } else if (method === "post") {
         try {
-            console.log("post", url, body)
             const res = await axios.post(url, body, config);
             return res.data;
         } catch (err) {
@@ -49,7 +45,6 @@ export default async function Request(method, url, body) {
         }
     } else if (method === "put") {
         try {
-            console.log("put", url, body)
             const res = await axios.put(url, body, config);
             return res.data;
         } catch (err) {

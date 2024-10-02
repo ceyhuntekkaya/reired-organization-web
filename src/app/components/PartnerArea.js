@@ -6,14 +6,10 @@ import partner5 from '../../assets/partner/5-5.jpg'
 import partner6 from '../../assets/partner/6-6.jpg'
 
 
-export default function PartnerArea () {
+export default function PartnerArea() {
 
 
-
-
-
-        return (
-            window.location.pathname === "/" ? null :
+    return (
         <div className="partner-area pt-115 pb-220">
             <div className="container">
                 <div className="row justify-content-center">
@@ -51,5 +47,5 @@ export default function PartnerArea () {
                 </div>
             </div>
         </div>
-        )
-        }
+    )
+}

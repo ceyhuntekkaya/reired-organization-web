@@ -1,47 +1,53 @@
-import React, { Component, createContext } from "react";
+import React, {Component, createContext, useContext} from "react";
+
 export const AppContext = createContext();
+
 class AppContextProvider extends Component {
-  state = {
-   
-    hasMenu:true,
-    tenantId:'',
-    tenant:null,
-    user:null
-  };
 
-  setUser = (user) => {
-    this.setState({ user });
-  };
-
-
-  setHasMenu = (hasMenu) => {
-    this.setState({ hasMenu });
-  };
-  setTenant = (tenant) => {
-    this.setState({tenant });
-  };
-
-  setTenantId = (tenantId) => {
-    this.setState({ tenantId });
-  };
+    constructor(props) {
+        super(props);
+        this.state = {
+            user: null,
+            student: null,
+            parent: null,
+            staff: null,
+            schoolManager: null,
+            staffAuthorityList: null
+        };
+        this.setUser = this.setUser.bind(this);
+    }
 
 
+    setUser = (userInformation) => {
+        const {user, student, parent, staff, schoolManager, staffAuthorityList} = userInformation;
+        this.setState({user, student, parent, staff, schoolManager, staffAuthorityList});
+        localStorage.setItem("user", JSON.stringify(user));
+        localStorage.setItem("student", JSON.stringify(student));
+        localStorage.setItem("parent", JSON.stringify(parent));
+        localStorage.setItem("staff", JSON.stringify(staff));
+        localStorage.setItem("schoolManager", JSON.stringify(schoolManager));
+        localStorage.setItem("staffAuthorityList", JSON.stringify(staffAuthorityList));
+    };
 
 
-  render() {
-    return (
-      <AppContext.Provider
-        value={{
-          ...this.state,
-          setHasMenu: this.setHasMenu,
-          setTenant: this.setTenant,
-          setTenantId: this.setTenantId,
-          setUser: this.setUser
-        }}
-      >
-        {this.props.children}
-      </AppContext.Provider>
-    );
-  }
+    render() {
+        return (
+            <AppContext.Provider
+                value={{
+                    ...this.state,
+                    setUser: this.setUser
+                }}
+            >
+                {this.props.children}
+            </AppContext.Provider>
+        );
+    }
 }
+
+export const useAppContext = () => {
+    const context = useContext(AppContext);
+    if (!context) throw Error("Context must be not null.");
+    return context;
+};
+
 export default AppContextProvider;

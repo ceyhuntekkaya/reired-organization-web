@@ -1,20 +1,5 @@
-
-
 import {
-  IconAdd,
-  IconAlert, IconBuy,
-  IconCalendar,
-  IconComponents,
-  IconDashboard,
-  IconDocumentation, IconGrayArchive, IconGraySnooze, IconHomeNavigation,
-  IconKanban, IconListOpen, IconMap,
-  IconMessages,
-  IconPage, IconPlus,
-  IconSettings,
-  IconTables, IconTask, IconTheme,
-  IconTransactions, IconTrash,
   IconUsers,
-  IconWidgets
 } from "../app/components/Icons";
 import AboutUs from "../app/AboutUs";
 import Adventure from "../app/Adventure";
@@ -35,16 +20,10 @@ import Home3 from "../app/home/Home3";
 import AllPages from "../app/AllPages";
 import ProjectList from "../app/ProjectList";
 import CampusList from "../app/CampusList";
-import BlankPage from "../BlankPage";
-
-
 
 const dashboardRoutes = [
-
-
-
   {
-    path: "/all",
+    path: "/page/all",
     name: "Hakkımızda",
     icon: IconUsers,
     component: AllPages,
@@ -58,7 +37,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/about-us",
+    path: "/page/about-us",
     name: "Hakkımızda",
     icon: IconUsers,
     component: AboutUs,
@@ -72,7 +51,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/adventure",
+    path: "/page/adventure",
     name: "Projeler",
     icon: IconUsers,
     component: Adventure,
@@ -86,7 +65,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/adventure-detail/:id",
+    path: "/page/adventure-detail/:id",
     name: "Okul Projeleri",
     icon: IconUsers,
     component: AdventureDetail,
@@ -100,7 +79,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/cart-list",
+    path: "/page/cart-list",
     name: "Başvurular",
     icon: IconUsers,
     component: CartList,
@@ -114,7 +93,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/check-out",
+    path: "/page/check-out",
     name: "Kurumlar",
     icon: IconUsers,
     component: Checkout,
@@ -128,7 +107,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/contact",
+    path: "/page/contact",
     name: "Raporlamalar",
     icon: IconUsers,
     component: Contact,
@@ -142,7 +121,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/error",
+    path: "/page/error",
     name: "Projeler",
     icon: IconUsers,
     component: Error,
@@ -155,7 +134,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/sing-up",
+    path: "/page/sing-up",
     name: "Okul Projeleri",
     icon: IconUsers,
     component: SignUp,
@@ -168,7 +147,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/travel/grid",
+    path: "/page/travel/grid",
     name: "Projeler",
     icon: IconUsers,
     component: TravelListGrid,
@@ -183,7 +162,7 @@ const dashboardRoutes = [
 
 
   {
-    path: "/travel/one",
+    path: "/page/travel/one",
     name: "Dash",
     icon: IconUsers,
     component: TravelListOne,
@@ -197,7 +176,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/travel/two",
+    path: "/page/travel/two",
     name: "Dashboard",
     icon: IconUsers,
     component: TravelListTwo,
@@ -212,7 +191,7 @@ const dashboardRoutes = [
   },
 
   {
-    path: "/login",
+    path: "/page/login",
     name: "Dashboard",
     icon: IconUsers,
     component: Login,
@@ -245,7 +224,7 @@ const dashboardRoutes = [
 
 
   {
-    path: "/home1",
+    path: "/page/home1",
     name: "Dashboard",
     icon: IconUsers,
     component: Home1,
@@ -259,7 +238,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/home2",
+    path: "/page/home2",
     name: "Dashboard",
     icon: IconUsers,
     component: Home2,
@@ -273,7 +252,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/home3",
+    path: "/page/home3",
     name: "Dashboard",
     icon: IconUsers,
     component: Home3,
@@ -291,7 +270,7 @@ const dashboardRoutes = [
 
 
   {
-    path: "/campus/:id",
+    path: "/page/campus/:id",
     name: "Dashboard",
     icon: IconUsers,
     component: CampusList,
@@ -305,7 +284,7 @@ const dashboardRoutes = [
     fullScreen: false
   },
   {
-    path: "/project/:id",
+    path: "/page/project/:id",
     name: "Dashboard",
     icon: IconUsers,
     component: ProjectList,

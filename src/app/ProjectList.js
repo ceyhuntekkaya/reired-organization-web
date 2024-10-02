@@ -1,6 +1,8 @@
 import {useApi} from "../service/useApi";
 import {useEffect} from "react";
 import {Link, useParams} from "react-router-dom";
+import config from "../configs/config.json";
+import ProjectCard from "./components/ProjectCard";
 
 export default function ProjectList() {
 
@@ -16,19 +18,16 @@ export default function ProjectList() {
 
 
     useEffect(() => {
-        console.log(id)
         setProject("getProjectById", id).then(r => null)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     useEffect(() => {
-        console.log(id)
         setProject("getProjectById", id).then(r => null)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id]);
 
-    console.log(id)
 
 
     const beginArea = () => {
@@ -107,26 +106,7 @@ export default function ProjectList() {
                         {
                             activeProjectList && Array.isArray(activeProjectList) ?
                                 activeProjectList.map((project, key) =>
-                                    key > 6 ?
-                                        <div key={key} className="col-lg-4 col-sm-6">
-                                            <div className="single-adventure">
-                                                <img src={`../${project.smallBanner}`} alt="adventure"/>
-                                                <div className="adventure-content">
-                                                    {
-                                                        // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
-                                                    }
-
-                                                    <Link to={`/adventure-detail/${project.id}`}><h6>{project.name}</h6>
-                                                    </Link>
-                                                    <p>{project.description}</p>
-                                                    {
-                                                        //<p className="price">Detaylı bilgi <small>Per Person</small></p>
-                                                    }
-                                                    <p className="btn btn-success"><Link
-                                                        to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
-                                                </div>
-                                            </div>
-                                        </div> : null
+                                    <ProjectCard key={key} project={project}/>
                                 ) : null
                         }
                     </div>

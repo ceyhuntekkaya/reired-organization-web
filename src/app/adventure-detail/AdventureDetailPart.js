@@ -17,13 +17,11 @@ export default function AdventureDetailPart() {
 
 
     useEffect(() => {
-        console.log(id)
         setProject("getProjectById", id).then(r => null)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-    console.log(project)
 
     return (
         <>
