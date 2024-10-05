@@ -33,14 +33,7 @@ export default function TripDateArea() {
                                 <td className="button"><Link className="btn-bor"
                                                              to="#">Başvur</Link></td>
                             </tr>
-                            <tr>
-                                <th scope="row"><span className="pl-15">Türkiye Okulları</span></th>
-                                <td>15.10.2024</td>
-                                <td>15.12.2024</td>
-                                <td>Anadolu Lisesi 9-10. Sınıflar</td>
-                                <td className="button"><Link className="btn-theme"
-                                                             to="#">Başvur</Link></td>
-                            </tr>
+
                             </tbody>
                         </table>
                     </div>

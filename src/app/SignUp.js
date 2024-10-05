@@ -141,7 +141,6 @@ export default function SignUp() {
     useEffect(() => {
 
         if (createUserResult?.user) {
-            console.log(createUserResult)
             userContext.setUser(createUserResult)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps

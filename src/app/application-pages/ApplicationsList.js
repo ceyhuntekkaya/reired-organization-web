@@ -1,6 +1,24 @@
 import {Link} from "react-router-dom";
+import {useApi} from "../../service/useApi";
+import {useContext, useEffect} from "react";
+import {AppContext} from "../../configs/AppContextProvider";
 
-export default function ApplicationsList (){
+export default function ApplicationsList (props){
+    const [applicationList, setApplicationList] = useApi([]);
+    const userContext = useContext(AppContext);
+    const {setSelectedApplication, setPage} = props;
+
+    useEffect(() => {
+        setApplicationList("getUserApplications", userContext.user?.id).then(r => null)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+
+    const selectApplicationEvent=(applicationId)=>{
+        setSelectedApplication(applicationId)
+        setPage(4)
+    }
+
     return (
         <div className="trip-date-area pt-100 pb-150">
             <div className="container">
@@ -17,21 +35,29 @@ export default function ApplicationsList (){
                             <thead>
                             <tr>
                                 <th scope="col"><p className="pl-15">Organizasyon</p></th>
-                                <th scope="col"><p>Başvuru Başlangış</p></th>
+                                <th scope="col"><p>Öğrenci</p></th>
                                 <th scope="col"><p>Başvuru Bitiş</p></th>
                                 <th scope="col"><p>Durumu</p></th>
                                 <th scope="col"><p></p></th>
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                                <th scope="row"><span className="pl-15">Türkiye Okulları</span></th>
-                                <td>15.10.2024</td>
-                                <td>15.12.2024</td>
-                                <td>Anadolu Lisesi 9-10. Sınıflar</td>
-                                <td className="button"><Link className="btn-bor"
-                                                             to="#">Detay</Link></td>
-                            </tr>
+                            {
+                                applicationList && Array.isArray(applicationList) ?
+                                    applicationList.map((application, index) =>
+
+                                        <tr key={index}>
+                                            <th scope="row"><span className="pl-15">{application.application.schoolProject.name}</span></th>
+                                            <td>{application.application.student.name} {application.application.student.lastname}</td>
+                                            <td>{new Date(application.application.createdAt).toDateString("tr")}</td>
+                                            <td>{application.application.applicationStatus}</td>
+                                            <td className="button"><Link className="btn-bor"
+                                                                         onClick={()=>selectApplicationEvent(application)}>Detay</Link></td>
+                                        </tr>
+
+                                    ) : null
+                            }
+
 
                             </tbody>
                         </table>

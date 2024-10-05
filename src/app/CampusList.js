@@ -1,12 +1,14 @@
 import {useApi} from "../service/useApi";
 import {useContext, useEffect, useState} from "react";
-import {Link, useParams} from "react-router-dom";
+import {Link, useParams, useSearchParams} from "react-router-dom";
 import ProjectCard from "./components/ProjectCard";
 import {AppContext} from "../configs/AppContextProvider";
 import Login from "./Login";
 import ApplicationDashboard from "./application-pages/ApplicationDashboard";
 import ApplicationsList from "./application-pages/ApplicationsList";
 import ApplicationParents from "./application-pages/ApplicationParents";
+import ApplicationDetails from "./application-pages/ApplicationDetails";
+import ApplicationStudentInfo from "./application-pages/ApplicationStudentInfo";
 
 export default function CampusList() {
     const [activeProjectList, setActiveProjectList] = useApi([]);
@@ -14,9 +16,20 @@ export default function CampusList() {
     const userContext = useContext(AppContext);
     let {id} = useParams();
     const [page, setPage] = useState(1);
+    const [searchParams, setSearchParams] = useSearchParams();
+
+
+    const [selectedApplication, setSelectedApplication] = useState(null);
 
     useEffect(() => {
         setSchool("getSchoolById", id).then(r => null)
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    useEffect(() => {
+        const pageNumber = searchParams.get("tab")
+        if(pageNumber) setPage(2)
 
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
@@ -33,7 +46,6 @@ export default function CampusList() {
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [userContext.parent]);
-
 
     const beginArea = () => {
         return (
@@ -97,15 +109,17 @@ export default function CampusList() {
         return (
             <>
                 <nav className="nav pb-3">
-                    <a className="nav-link active" aria-current="page" onClick={() => setPage(1)}>Organizasyonlar</a>
+                    <a className="nav-link" onClick={() => setPage(1)}>Organizasyonlar</a>
                     <a className="nav-link" onClick={() => setPage(2)}>Başvurularım</a>
                     <a className="nav-link" onClick={() => setPage(3)}>Veli Bilgileri</a>
-                    <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
+                    <a className="nav-link" onClick={() => setPage(5)}>Öğrenci Bilgileri</a>
                 </nav>
                 {
                     page === 1 ? <ApplicationDashboard activeProjectList={activeProjectList}/> :
-                        page === 2 ? <ApplicationsList/> :
+                        page === 2 ? <ApplicationsList setPage={setPage} setSelectedApplication={setSelectedApplication}/> :
                             page === 3 ? <ApplicationParents/> :
+                                page === 4 ? <ApplicationDetails application={selectedApplication}/> :
+                                    page === 5 ? <ApplicationStudentInfo application={selectedApplication}/> :
                                 <h1>Page 4</h1>
                 }
             </>

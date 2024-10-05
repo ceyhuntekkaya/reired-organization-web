@@ -1,6 +1,4 @@
-import TripDateArea from "./TripDateArea";
 import SimilarTrips from "./SimilarTrips";
-import TripInformation from "./TripInformation";
 import AdventureRight from "./AdventureRight";
 import AdventureLeft from "./AdventureLeft";
 import AdventureDiscover from "./AdventureDiscover";
@@ -20,7 +18,6 @@ export default function AdventureDetailPart() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-console.log(project)
     return (
         <>
             {

@@ -1,4 +1,4 @@
-import {useNavigate, useParams} from "react-router-dom";
+import {useNavigate, useParams, useSearchParams} from "react-router-dom";
 import {useApi} from "../../service/useApi";
 import {useContext, useEffect} from "react";
 import AdventureDiscover from "../adventure-detail/AdventureDiscover";
@@ -18,9 +18,7 @@ export default function SchoolProjectDetail() {
     const [application, setApplication] = useApi(null);
     const navigate = useNavigate();
 
-
     useEffect(() => {
-        console.log("getSchoolProjectById")
         setProject("getSchoolProjectById", id).then(r => null)
         setCampusProject("getSchoolProjectCampus", {
             projectId: id,
@@ -43,15 +41,9 @@ export default function SchoolProjectDetail() {
             isPaid: false,
             applicationStatus: "RESERVATION"
         }
-
-        console.log(applicationData)
         setApplication("createApplication", applicationData).then(r => null)
         navigate("/applications?tab=2")
-
-
     }
-    console.log(application)
-
 
     const feeInformation = () => {
         return (

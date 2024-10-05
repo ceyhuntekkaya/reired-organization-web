@@ -19,7 +19,6 @@ export const useApi = () => {
     };
 
     const getSchoolProjectById = async (projectId) => {
-        console.log(`${config.api.invokeUrl}/school/project/${projectId}`)
         const response = await Request("get", `${config.api.invokeUrl}/school/project/${projectId}`);
         setResult(response);
     };
@@ -75,10 +74,41 @@ export const useApi = () => {
         const response = await Request("post", `${config.api.invokeUrl}/application/`, data);
         setResult(response);
     };
+    const getUserApplications = async (data) => {
+        const response = await Request("get", `${config.api.invokeUrl}/application/student/${data}`);
+        setResult(response);
+    };
+    const getAgreement = async () => {
+        const response = await Request("get", `${config.api.invokeUrl}/institution/agreement/`);
+        setResult(response);
+    };
+
+
+    const getApplicationAgreement = async (data) => {
+        const response = await Request("get", `${config.api.invokeUrl}/application/agreement/${data}`);
+        setResult(response);
+    };
+    const setApplicationAgreement = async (data) => {
+        const response = await Request("get", `${config.api.invokeUrl}/application/agreement/${data.applicationId}/${data.userId}`);
+        setResult(response);
+    };
 
     const handleChange = async (type, data) => {
         if (type === "getActiveProject") {
             await getActiveProject();
+        }
+        else  if (type === "getAgreement") {
+            await getAgreement();
+        }
+        else  if (type === "getApplicationAgreement") {
+            await getApplicationAgreement(data);
+        }
+        else  if (type === "setApplicationAgreement") {
+            await setApplicationAgreement(data);
+        }
+
+        else  if (type === "getUserApplications") {
+            await getUserApplications(data);
         }
         else  if (type === "createApplication") {
             await createApplication(data);
