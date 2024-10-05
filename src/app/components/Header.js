@@ -109,19 +109,22 @@ export default function Header() {
                                         <li><Link to="/">Ana Sayfa</Link></li>
                                         <li><Link to="/page/about-us">Hakkımızda</Link></li>
 
-                                        <li className="has-dropdown"><Link
-                                            to="javascript:void(0)">Okullarımız</Link>
-                                            <ul>
-                                                {
-                                                    schoolList && Array.isArray(schoolList) && schoolList.map((item, index) => (
-                                                        <li key={index}><Link
-                                                            to={`/page/campus/${item.id}`}>{item.name}</Link>
-                                                        </li>
-                                                    ))
-                                                }
+                                        {
+                                            userContext.admin &&
+                                            <li className="has-dropdown"><Link
+                                                to="javascript:void(0)">Okullarımız</Link>
+                                                <ul>
+                                                    {
+                                                        schoolList && Array.isArray(schoolList) && schoolList.map((item, index) => (
+                                                            <li key={index}><Link
+                                                                to={`/page/campus/${item.id}`}>{item.name}</Link>
+                                                            </li>
+                                                        ))
+                                                    }
 
-                                            </ul>
-                                        </li>
+                                                </ul>
+                                            </li>
+                                        }
                                         <li className="has-dropdown"><Link
                                             to="javascript:void(0)">Programlar</Link>
                                             <ul>
@@ -136,16 +139,30 @@ export default function Header() {
                                         </li>
 
                                         <li><Link to="/page/contact">İletişim</Link></li>
-                                        <li><Link to="/page/sing-up">Kayıt</Link></li>
-                                        <li className="icon"><Link to="/page/login"><i
-                                            className="far fa-user"></i>LOGIN</Link></li>
-                                        <li className="icon"><Link to="/page/">
-                                            {
-                                                // <li className="icon"><Link to="/page/cart-list">
-                                            }
-                                            <i
-                                                className="fal fa-shopping-basket"></i><small>(2)</small></Link>
-                                        </li>
+                                        {
+                                            userContext.user ?
+                                                <>
+                                                    <li><Link to="/application">Başvurularım</Link></li>
+                                                    <li className="icon"><Link to="/page/"> <i
+                                                        className="fal fa-shopping-basket"></i><small>(2)</small></Link>
+                                                    </li>
+                                                    <li className="icon"><Link
+                                                        to="javascript:void(0)">Çıkış</Link>
+
+                                                    </li>
+
+                                                </> : <>
+                                                <li><Link to="/page/sing-up">Kayıt</Link></li>
+                                                    <li className="icon"><Link to={`/login`}><i
+                                                        className="far fa-user"></i>LOGIN</Link></li>
+
+                                                </>
+                                        }
+
+                                        {
+                                            // <li className="icon"><Link to="/page/cart-list">
+                                        }
+
                                     </ul>
                                 </nav>
                             </div>

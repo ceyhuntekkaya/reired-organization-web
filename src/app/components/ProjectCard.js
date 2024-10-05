@@ -1,10 +1,8 @@
 import config from "../../configs/config.json";
 import {Link} from "react-router-dom";
 
-export default function ProjectCard (props){
-    const {project, key} = props;
-
-
+export default function ProjectCard(props) {
+    const {project, key, type} = props;
 
     return (
         <div key={key} className="col-lg-4 col-sm-6">
@@ -12,17 +10,22 @@ export default function ProjectCard (props){
                 <img src={`${config.domain}${project.smallBanner}`} alt="adventure"/>
                 <div className="adventure-content">
                     {
-                        // <p className="tour">7 Days - 14 People Max - Multi-activity</p>
+                        type ?
+                            <Link to={`/user/school/project/detail/${project.id}`}><h6>{project.name}</h6>
+                            </Link>
+                            :
+                            <Link to={`/page/adventure-detail/${project.id}`}><h6>{project.name}</h6>
+                            </Link>
                     }
-
-                    <Link to={`/page/adventure-detail/${project.id}`}><h6>{project.name}</h6>
-                    </Link>
                     <p>{project.description}</p>
                     {
-                        //<p className="price">Detaylı bilgi <small>Per Person</small></p>
+                        type ?
+                            <p className="btn btn-success"><Link
+                                to={`/user/school/project/detail/${project.id}`}>Detaylı bilgi ve başvuru</Link></p>
+                            :
+                            <p className="btn btn-success"><Link
+                                to={`/page/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
                     }
-                    <p className="btn btn-success"><Link
-                        to={`/adventure-detail/${project.id}`}>Detaylı bilgi</Link></p>
                 </div>
             </div>
         </div>

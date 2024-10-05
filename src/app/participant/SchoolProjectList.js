@@ -1,19 +1,16 @@
-import {useApi} from "../service/useApi";
-import {useContext, useEffect, useState} from "react";
-import {Link, useParams} from "react-router-dom";
-import ProjectCard from "./components/ProjectCard";
-import {AppContext} from "../configs/AppContextProvider";
-import Login from "./Login";
-import ApplicationDashboard from "./application-pages/ApplicationDashboard";
-import ApplicationsList from "./application-pages/ApplicationsList";
-import ApplicationParents from "./application-pages/ApplicationParents";
+import {useApi} from "../../service/useApi";
+import {useContext, useEffect} from "react";
+import {useParams} from "react-router-dom";
+import ProjectCard from "../components/ProjectCard";
+import {AppContext} from "../../configs/AppContextProvider";
+import Login from "../Login";
 
-export default function CampusList() {
+
+export default function SchoolProjectList() {
     const [activeProjectList, setActiveProjectList] = useApi([]);
     const [school, setSchool] = useApi([]);
     const userContext = useContext(AppContext);
     let {id} = useParams();
-    const [page, setPage] = useState(1);
 
     useEffect(() => {
         setSchool("getSchoolById", id).then(r => null)
@@ -93,25 +90,6 @@ export default function CampusList() {
         )
     }
 
-    const mainPageContent = () => {
-        return (
-            <>
-                <nav className="nav pb-3">
-                    <a className="nav-link active" aria-current="page" onClick={() => setPage(1)}>Organizasyonlar</a>
-                    <a className="nav-link" onClick={() => setPage(2)}>Başvurularım</a>
-                    <a className="nav-link" onClick={() => setPage(3)}>Veli Bilgileri</a>
-                    <a className="nav-link disabled" href="#" tabIndex="-1" aria-disabled="true">Disabled</a>
-                </nav>
-                {
-                    page === 1 ? <ApplicationDashboard activeProjectList={activeProjectList}/> :
-                        page === 2 ? <ApplicationsList/> :
-                            page === 3 ? <ApplicationParents/> :
-                                <h1>Page 4</h1>
-                }
-            </>
-        )
-    }
-
     return (
         <>
             {
@@ -122,9 +100,10 @@ export default function CampusList() {
                     <div className="row">
                         {
                             userContext.parent ?
-
-                                mainPageContent()
-
+                                activeProjectList && Array.isArray(activeProjectList) ?
+                                    activeProjectList.map((project, key) =>
+                                        <ProjectCard type="school" key={key} project={project}/>
+                                    ) : null
                                 : <Login/>
                         }
                     </div>

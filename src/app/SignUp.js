@@ -59,6 +59,30 @@ const user = {
     activationCode: "",
 }
 
+
+const gradeList = [
+    {id: "GRADE_1", name: "1. Sınıf"},
+    {id: "GRADE_2", name: "2. Sınıf"},
+    {id: "GRADE_3", name: "3. Sınıf"},
+    {id: "GRADE_4", name: "4. Sınıf"},
+    {id: "GRADE_5", name: "5. Sınıf"},
+    {id: "GRADE_6", name: "6. Sınıf"},
+    {id: "GRADE_7", name: "7. Sınıf"},
+    {id: "GRADE_8", name: "8. Sınıf"},
+    {id: "GRADE_9", name: "9. Sınıf"},
+    {id: "GRADE_10", name: "10. Sınıf"},
+    {id: "GRADE_11", name: "11. Sınıf"},
+    {id: "GRADE_12", name: "12. Sınıf"}
+]
+
+
+const parentTypeList = [
+    {id: "FATHER", name: "Baba"},
+    {id: "MOTHER", name: "Anne"},
+    {id: "OTHER", name: "Diğer"},
+
+]
+
 export default function SignUp() {
     const [data, setData] = useState(registerData)
     const [school, setCheckCode] = useApi({});
@@ -162,7 +186,7 @@ export default function SignUp() {
                                                type="text" changeEvent={changeEvent}/>
                                     <FormInput text="Sınıf" name="grade" value={data.grade}
                                                css="single-field half-field"
-                                               type="text" changeEvent={changeEvent}/>
+                                               type="select" data={gradeList} changeEvent={changeEvent}/>
                                     <FormInput text="Şube" name="branch" value={data.branch}
                                                css="single-field half-field-last"
                                                type="text" changeEvent={changeEvent}/>
@@ -185,7 +209,7 @@ export default function SignUp() {
                             <FormInput text="Telefon Numarası" name="parentPhone" value={data.parentPhone} css="single-field"
                                        type="text" changeEvent={changeEvent}/>
                             <FormInput text="Yaknlık" name="parentType" value={data.parentType} css="single-field"
-                                       type="text" changeEvent={changeEvent}/>
+                                       type="select" data={parentTypeList} changeEvent={changeEvent}/>
                             <button className="btn btn-theme" onClick={saveEvent}>Kaydol</button>
                         </div>
                     </div>

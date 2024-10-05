@@ -5,7 +5,6 @@ import Request from "./Request";
 
 const config = require("../configs/config.json");
 
-
 export const useApi = () => {
     const [result, setResult] = useState(null);
 
@@ -19,13 +18,16 @@ export const useApi = () => {
         setResult(response);
     };
 
-
+    const getSchoolProjectById = async (projectId) => {
+        console.log(`${config.api.invokeUrl}/school/project/${projectId}`)
+        const response = await Request("get", `${config.api.invokeUrl}/school/project/${projectId}`);
+        setResult(response);
+    };
 
     const getAllSchools = async () => {
         const response = await Request("get", `${config.api.invokeUrl}/institution/schools/`);
         setResult(response);
     };
-
 
     const getSchoolById = async (schoolId) => {
         const response = await Request("get", `${config.api.invokeUrl}/institution/detail/${schoolId}`);
@@ -42,29 +44,53 @@ export const useApi = () => {
         setResult(response);
     };
 
-
     const createUserStudent = async (data) => {
         const response = await Request("post", `${config.api.invokeUrl}/user/`, data);
         setResult(response);
     };
-
 
     const findSchoolProjectBySchool = async (schoolId) => {
         const response = await Request("get", `${config.api.invokeUrl}/school/project/school/${schoolId}`);
         setResult(response);
     };
 
-
     const studentLogin = async (identityNumber) => {
         const response = await Request("get", `${config.api.invokeUrl}/user/student/login/${identityNumber}`);
+        setResult(response);
+    };
+
+
+    const uploadApplicationFile = async (data) => {
+        const response = await Request("post", `${config.api.invokeUrl}/storage/upload/file`, data);
+        setResult(response);
+    };
+
+
+    const getSchoolProjectCampus = async (data) => {
+        const response = await Request("get", `${config.api.invokeUrl}/school/project/campus/${data.projectId}/${data.campusId}`);
+        setResult(response);
+    };
+
+    const createApplication = async (data) => {
+        const response = await Request("post", `${config.api.invokeUrl}/application/`, data);
         setResult(response);
     };
 
     const handleChange = async (type, data) => {
         if (type === "getActiveProject") {
             await getActiveProject();
-        } else  if (type === "getProjectById") {
+        }
+        else  if (type === "createApplication") {
+            await createApplication(data);
+        }
+        else  if (type === "getProjectById") {
             await getProjectById(data);
+        }
+        else  if (type === "getSchoolProjectById") {
+            await getSchoolProjectById(data);
+        }
+        else  if (type === "getSchoolProjectCampus") {
+            await getSchoolProjectCampus(data);
         }
         else  if (type === "getSchoolById") {
             await getSchoolById(data);
@@ -87,9 +113,10 @@ export const useApi = () => {
         else  if (type === "studentLogin") {
             await studentLogin(data);
         }
-
+        else  if (type === "uploadApplicationFile") {
+            await uploadApplicationFile(data);
+        }
     };
-
 
     return [result, handleChange];
 };

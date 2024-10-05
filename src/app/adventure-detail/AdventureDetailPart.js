@@ -1,11 +1,9 @@
 import TripDateArea from "./TripDateArea";
 import SimilarTrips from "./SimilarTrips";
-import PartnerArea from "../components/PartnerArea";
 import TripInformation from "./TripInformation";
 import AdventureRight from "./AdventureRight";
 import AdventureLeft from "./AdventureLeft";
 import AdventureDiscover from "./AdventureDiscover";
-import AdventureSelect from "./AdventureSelect";
 import {useApi} from "../../service/useApi";
 import {useEffect} from "react";
 import {useParams} from "react-router-dom";
@@ -22,7 +20,7 @@ export default function AdventureDetailPart() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
-
+console.log(project)
     return (
         <>
             {
@@ -45,8 +43,7 @@ export default function AdventureDetailPart() {
                             </div>
                         </div>
                     </div>
-                    <TripInformation project={project}/>
-                    <TripDateArea project={project}/>
+
                     <SimilarTrips project={project}/>
                 </>
                 : null
