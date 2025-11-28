@@ -4,7 +4,6 @@ import SubscribeArea from "./app/adventure/SubscribeArea";
 
 
 function App() {
-
     const loadingPanel = () => {
 
         return (

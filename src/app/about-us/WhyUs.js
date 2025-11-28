@@ -16,17 +16,17 @@ export default function WhyUs() {
                         <p className="text-center mb-45">
 
 
-                            Campusorg olarak, lise öğrencilerine unutulmaz bir deneyim yaşatmak için yurtdışı
+                            Reired olarak, lise öğrencilerine unutulmaz bir deneyim yaşatmak için yurtdışı
                             gezi programları düzenliyoruz. Öğrencilerimizin sadece akademik değil, aynı zamanda kültürel
                             ve sanatsal gelişimlerine de katkıda bulunmak önceliğimiz.<br/><br/>
 
 
-                            Campusorg olarak amacımız, öğrencilerin sadece ders kitaplarından değil, aynı
+                            Reired olarak amacımız, öğrencilerin sadece ders kitaplarından değil, aynı
                             zamanda gerçek hayattan da öğrenmelerini sağlamak. Yurtdışı gezilerimiz, öğrencilerin
                             özgüvenlerini artırmalarına, farklı kültürlere karşı hoşgörülü olmalarına ve geleceğe daha
                             donanımlı bir şekilde hazırlanmalarına katkı sağlıyor.<br/><br/>
 
-                            Campusorg ile yurtdışı gezisi yapmak isteyen lise öğrencileri ve velileri için
+                            Reired ile yurtdışı gezisi yapmak isteyen lise öğrencileri ve velileri için
                             unutulmaz bir deneyim garantisi veriyoruz.<br/>
 
 

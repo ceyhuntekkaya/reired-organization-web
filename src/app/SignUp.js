@@ -2,6 +2,7 @@ import FormInput from "./components/FormInput";
 import {useContext, useEffect, useState} from "react";
 import {useApi} from "../service/useApi";
 import {AppContext} from "../configs/AppContextProvider";
+import validator from 'validator'
 
 const registerData = {
     code: "",
@@ -85,6 +86,7 @@ const parentTypeList = [
 
 export default function SignUp() {
     const [data, setData] = useState(registerData)
+    const [errorText, setErrorText] = useState([])
     const [school, setCheckCode] = useApi({});
     const [schoolCampusList, setSchoolCampusList] = useApi([]);
     const [createUserResult, setCreateUser] = useApi({});
@@ -105,37 +107,113 @@ export default function SignUp() {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [school]);
 
-    const saveEvent = (e) => {
 
-        const saveData = {
-            student: {
-                ...student,
-                name: data.name,
-                lastname: data.lastName,
-                identityNumber: data.idCart,
-                grade: data.grade,
-                branch: data.branch,
-                school: school,
-                schoolCampus: schoolCampusList.find(item => item.id === data.campusId),
-            },
-            parent: {
-                ...parent,
-                name: data.name,
-                lastname: data.lastName,
-                email: data.email,
-                parentType: data.parentType,
-                school: school,
-                schoolCampus: schoolCampusList.find(item => item.id === data.campusId)
-            },
-            user: {
-                ...user,
-                username: data.idCart,
-                password: data.idCart,
-                mobilePhone: data.parentPhone,
-                role: "PARENT"
-            }
+    const validateData = () => {
+        let result = true;
+        let errorList = [];
+
+        if (data.name.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "İsim alanı boş bırakılamaz"}))
         }
-        setCreateUser("createUserStudent", saveData).then(r => null)
+        if (data.lastName.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Soyisim alanı boş bırakılamaz"}))
+        }
+        if (!checkTcNum(data.idCart)) {
+            result = false;
+            setErrorText(errorList.push({error: "T.C. Kimlik No geçerli olmalıdır"}))
+        }
+        if (data.grade.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Sınıf seçimi yapınız"}))
+        }
+        if (data.branch.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Şube alanı boş bırakılamaz"}))
+        }
+        if (data.parentNme.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Veli ismi alanı boş bırakılamaz"}))
+        }
+        if (data.parentLastname.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Veli soyisim alanı boş bırakılamaz"}))
+        }
+        if (!validator.isEmail(data.parentMail)) {
+            result = false;
+            setErrorText(errorList.push({error: "Veli mail alanı boş bırakılamaz"}))
+        }
+        if (!validator.isMobilePhone(data.parentPhone)) {
+            result = false;
+            setErrorText(errorList.push({error: "Veli telefon alanı boş bırakılamaz"}))
+        }
+        if (data.parentType.length < 1) {
+            result = false;
+            setErrorText(errorList.push({error: "Veli tipi seçimi yapınız"}))
+        }
+
+
+        if (result) setErrorText([]);
+        else setErrorText(errorList);
+
+        return result;
+    }
+
+
+    var checkTcNum = function (value) {
+        value = value.toString();
+        var isEleven = /^[0-9]{11}$/.test(value);
+        var totalX = 0;
+        for (var i = 0; i < 10; i++) {
+            totalX += Number(value.substr(i, 1));
+        }
+        var isRuleX = totalX % 10 == value.substr(10, 1);
+        var totalY1 = 0;
+        var totalY2 = 0;
+        for (var i = 0; i < 10; i += 2) {
+            totalY1 += Number(value.substr(i, 1));
+        }
+        for (var i = 1; i < 10; i += 2) {
+            totalY2 += Number(value.substr(i, 1));
+        }
+        var isRuleY = ((totalY1 * 7) - totalY2) % 10 == value.substr(9, 0);
+        return isEleven && isRuleX && isRuleY;
+    };
+
+    const saveEvent = (e) => {
+        if (validateData()) {
+            const saveData = {
+                student: {
+                    ...student,
+                    name: data.name,
+                    lastname: data.lastName,
+                    identityNumber: data.idCart,
+                    grade: data.grade,
+                    branch: data.branch,
+                    school: school,
+                    schoolCampus: schoolCampusList.find(item => item.id === data.campusId),
+                },
+                parent: {
+                    ...parent,
+                    name: data.name,
+                    lastname: data.lastName,
+                    email: data.email,
+                    parentType: data.parentType,
+                    school: school,
+                    schoolCampus: schoolCampusList.find(item => item.id === data.campusId)
+                },
+                user: {
+                    ...user,
+                    username: data.idCart,
+                    password: data.idCart,
+                    mobilePhone: data.parentPhone,
+                    role: "PARENT"
+                }
+            }
+            setCreateUser("createUserStudent", saveData).then(r => null)
+        }
+
     }
 
     useEffect(() => {
@@ -205,12 +283,21 @@ export default function SignUp() {
                                        css="single-field" type="text" changeEvent={changeEvent}/>
                             <FormInput text="Mail Adresi" name="parentMail" value={data.parentMail} css="single-field"
                                        type="text" changeEvent={changeEvent}/>
-                            <FormInput text="Telefon Numarası" name="parentPhone" value={data.parentPhone} css="single-field"
+                            <FormInput text="Telefon Numarası" name="parentPhone" value={data.parentPhone}
+                                       css="single-field"
                                        type="text" changeEvent={changeEvent}/>
                             <FormInput text="Yaknlık" name="parentType" value={data.parentType} css="single-field"
                                        type="select" data={parentTypeList} changeEvent={changeEvent}/>
                             <button className="btn btn-theme" onClick={saveEvent}>Kaydol</button>
                         </div>
+
+                        {
+                            errorText && errorText.length > 0 ? errorText.map((item, index) => {
+                                return <div className="btn-danger p-2 m-2"><p key={index}>{item.error}</p></div>
+                            }) : null
+                        }
+
+
                     </div>
                 </div>
             </div>

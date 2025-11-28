@@ -77,7 +77,7 @@ export default function Header() {
 
                         <div className="header-top-contact">
                             <ul>
-                                <li><Link to="mailto:yourname@email.com"><i className="fal fa-envelope"></i>support@campusorg.com</Link>
+                                <li><Link to="mailto:yourname@email.com"><i className="fal fa-envelope"></i>support@reired.com</Link>
                                 </li>
                                 <li><Link to="tel:+008012345678"><i className="fal fa-phone-alt"></i>012 345
                                     6789</Link>

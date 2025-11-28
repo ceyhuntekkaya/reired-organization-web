@@ -14,15 +14,12 @@ import TravelListOne from "../app/TravelListOne";
 import TravelListTwo from "../app/TravelListTwo";
 import SignUp from "../app/SignUp";
 import App from "../App";
-import Home1 from "../app/home/Home1";
-import Home2 from "../app/home/Home2";
-import Home3 from "../app/home/Home3";
 import AllPages from "../app/AllPages";
 import ProjectList from "../app/ProjectList";
 import CampusList from "../app/CampusList";
-import RegistryCart from "../app/participant/RegistryCart";
-import RegistryDashboard from "../app/participant/RegistryDashboard";
-import RegistryDetail from "../app/participant/RegistryDetail";
+
+
+
 import SchoolProjectDetail from "../app/participant/SchoolProjectDetail";
 import SchoolProjectList from "../app/participant/SchoolProjectList";
 import UploadFile from "../app/storage/UploadFile";
@@ -245,50 +242,6 @@ const dashboardRoutes = [
 
 
 
-  {
-    path: "/page/home1",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: Home1,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
-  {
-    path: "/page/home2",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: Home2,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
-  {
-    path: "/page/home3",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: Home3,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
-
-
 
 
   {
@@ -321,51 +274,6 @@ const dashboardRoutes = [
   },
 
 
-
-
-
-  {
-    path: "/user/project/:id",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: RegistryCart,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
-  {
-    path: "/user/dashboard",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: RegistryDashboard,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
-  {
-    path: "/user/registry/detail",
-    name: "Dashboard",
-    icon: IconUsers,
-    component: RegistryDetail,
-    menu: true,
-    location: "",
-    overPath: "EXAMS",
-    auth: ["SUPER_ADMIN", "ADMIN"],
-    sort: 0,
-    sidePanelVisible: true,
-    image:"../img/bg/adventure-1.jpg",
-    fullScreen: false
-  },
   {
     path: "/user/school/project/detail/:id",
     name: "Dashboard",

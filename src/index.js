@@ -11,8 +11,7 @@ import BreadcrumbArea from "./app/components/BreadcrumbArea";
 
 import PartnerArea from "./app/components/PartnerArea";
 import Footer from "./app/components/Footer";
-import App from "./App";
-import BlankPage from "./BlankPage";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

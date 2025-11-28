@@ -55,7 +55,7 @@ export default function Contact (){
                                 </div>
                                 <div className="contact-content">
                                     <h4>Mail</h4>
-                                    <Link to="mailto:yourname@email.com">admin@campusorg.com.tr</Link>
+                                    <Link to="mailto:yourname@email.com">admin@reired.com.tr</Link>
                                 </div>
                             </div>
                         </div>

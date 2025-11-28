@@ -9,6 +9,7 @@ import ApplicationsList from "./application-pages/ApplicationsList";
 import ApplicationParents from "./application-pages/ApplicationParents";
 import ApplicationDetails from "./application-pages/ApplicationDetails";
 import ApplicationStudentInfo from "./application-pages/ApplicationStudentInfo";
+import ApplicationTimeLine from "./application-pages/ApplicationTimeLine";
 
 export default function CampusList() {
     const [activeProjectList, setActiveProjectList] = useApi([]);
@@ -113,13 +114,15 @@ export default function CampusList() {
                     <a className="nav-link" onClick={() => setPage(2)}>Başvurularım</a>
                     <a className="nav-link" onClick={() => setPage(3)}>Veli Bilgileri</a>
                     <a className="nav-link" onClick={() => setPage(5)}>Öğrenci Bilgileri</a>
+                    <a className="nav-link" onClick={() => setPage(6)}>Timeline</a>
                 </nav>
                 {
                     page === 1 ? <ApplicationDashboard activeProjectList={activeProjectList}/> :
                         page === 2 ? <ApplicationsList setPage={setPage} setSelectedApplication={setSelectedApplication}/> :
-                            page === 3 ? <ApplicationParents/> :
+                            page === 3 ? <ApplicationParents application={selectedApplication}/> :
                                 page === 4 ? <ApplicationDetails application={selectedApplication}/> :
                                     page === 5 ? <ApplicationStudentInfo application={selectedApplication}/> :
+                                        page === 6 ? <ApplicationTimeLine application={selectedApplication}/> :
                                 <h1>Page 4</h1>
                 }
             </>

@@ -1,17 +1,19 @@
-import {useNavigate, useParams, useSearchParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import {useApi} from "../../service/useApi";
 import {useContext, useEffect} from "react";
 import AdventureDiscover from "../adventure-detail/AdventureDiscover";
 import AdventureLeft from "../adventure-detail/AdventureLeft";
 import AdventureRight from "../adventure-detail/AdventureRight";
 import TripInformation from "../adventure-detail/TripInformation";
-import TripDateArea from "../adventure-detail/TripDateArea";
 import SimilarTrips from "../adventure-detail/SimilarTrips";
 import {AppContext} from "../../configs/AppContextProvider";
 
 export default function SchoolProjectDetail() {
     let {id} = useParams();
     const userContext = useContext(AppContext);
+
+
+    console.log(userContext)
 
     const [project, setProject] = useApi(null);
     const [campusProject, setCampusProject] = useApi(null);
